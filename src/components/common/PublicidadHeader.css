@@ -1,0 +1,8 @@
+#fondo{
+    background: linear-gradient(to bottom, rgb(23, 80, 157), rgb(5, 178, 234));
+    height: 6rem;
+}
+#titulo-publicidad{
+    color: #fff;
+    font-size: 24px
+}
