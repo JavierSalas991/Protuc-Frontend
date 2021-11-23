@@ -59,62 +59,18 @@ const CursosYProgramas = () => {
 
       <div className="mt-3 mx-4">
         <Row justify="space-around">
-          <Col span={5}>
-            <Card
-              className="p-0"
-              style={{ "background-color": "rgb(29, 33, 60)" }}
-            >
-              <Card.Img variant="top" src={`${imagenPrueba}`} />
-              <Card.Body className="pb-0">
-                <Card.Title className="text-light">
-                  Reparacion de celulares
-                </Card.Title>
-                <div className="d-flex justify-content-between mt-4">
-                  <p className="colorsito-amarillo cursor-pointer">
-                    Inscribite
-                  </p>
-                  <p className="colorsito-celeste cursor-pointer">
-                    + Nivel: Inicial
-                  </p>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col span={5}>
-            <Card
-              className="p-0"
-              style={{ "background-color": "rgb(29, 33, 60)" }}
-            >
-              <Card.Img variant="top" src={`${imagenPrueba}`} />
-              <Card.Body className="pb-0">
-                <Card.Title className="text-light">
-                  Reparacion de celulares
-                </Card.Title>
-                <div className="d-flex justify-content-between mt-4">
-                  <p className="colorsito-amarillo cursor-pointer">
-                    Inscribite
-                  </p>
-                  <p className="colorsito-celeste cursor-pointer">
-                    + Nivel: Inicial
-                  </p>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-
-
-
+          
           <Col span={5}>
             <Card
               className="p-0 h-100"
               style={{ "background-color": "rgb(29, 33, 60)" }}
             >
               <Card.Img variant="top" src={`${imagenPrueba}`} />
-              <Card.Body className="pb-0 bg-dark">
+              <Card.Body className="pb-0  d-flex flex-column justify-content-between">
                 <Card.Title className="text-light">
                   Reparacion de celulares
                 </Card.Title>
-                <div className='bg-secondary m-0 p-0'>
+                <div className=' m-0 p-0'>
                   <div className="d-flex justify-content-between align-items-end mt-4">
                     <p className="colorsito-amarillo cursor-pointer">
                       Inscribite
@@ -129,25 +85,77 @@ const CursosYProgramas = () => {
           </Col>
           <Col span={5}>
             <Card
-              className="p-0"
+              className="p-0 h-100"
               style={{ "background-color": "rgb(29, 33, 60)" }}
             >
               <Card.Img variant="top" src={`${imagenPrueba}`} />
-              <Card.Body className="pb-0">
+              <Card.Body className="pb-0  d-flex flex-column justify-content-between">
                 <Card.Title className="text-light">
-                  Auxiliar en administracion prueba nombre largo
+                  Reparacion de celulares ejeplo titulo muy largho y este es aun mas largo a ver que onda
                 </Card.Title>
-                <div className="d-flex justify-content-between mt-4 bg-secondary">
-                  <p className="colorsito-amarillo cursor-pointer">
-                    Inscribite
-                  </p>
-                  <p className="colorsito-celeste cursor-pointer">
-                    + Nivel: Inicial
-                  </p>
+                <div className=' m-0 p-0'>
+                  <div className="d-flex justify-content-between align-items-end mt-4">
+                    <p className="colorsito-amarillo cursor-pointer">
+                      Inscribite
+                    </p>
+                    <p className="colorsito-celeste cursor-pointer">
+                      + Nivel: Inicial
+                    </p>
+                  </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
+          <Col span={5}>
+            <Card
+              className="p-0 h-100"
+              style={{ "background-color": "rgb(29, 33, 60)" }}
+            >
+              <Card.Img variant="top" src={`${imagenPrueba}`} />
+              <Card.Body className="pb-0  d-flex flex-column justify-content-between">
+                <Card.Title className="text-light">
+                  Reparacion de celulares
+                </Card.Title>
+                <div className=' m-0 p-0'>
+                  <div className="d-flex justify-content-between align-items-end mt-4">
+                    <p className="colorsito-amarillo cursor-pointer">
+                      Inscribite
+                    </p>
+                    <p className="colorsito-celeste cursor-pointer">
+                      + Nivel: Inicial
+                    </p>
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col span={5}>
+            <Card
+              className="p-0 h-100"
+              style={{ "background-color": "rgb(29, 33, 60)" }}
+            >
+              <Card.Img variant="top" src={`${imagenPrueba}`} />
+              <Card.Body className="pb-0  d-flex flex-column justify-content-between">
+                <Card.Title className="text-light">
+                  Reparacion de celulares ejeplo titulo muy largho
+                </Card.Title>
+                <div className=' m-0 p-0'>
+                  <div className="d-flex justify-content-between align-items-end mt-4">
+                    <p className="colorsito-amarillo cursor-pointer">
+                      Inscribite
+                    </p>
+                    <p className="colorsito-celeste cursor-pointer">
+                      + Nivel: Inicial
+                    </p>
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+
+
+
+         
         </Row>
       </div>
     </div>
