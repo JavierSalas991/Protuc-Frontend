@@ -11,7 +11,6 @@ const Inicio = () => {
        <Header/>
       <Empresas/>
       <CursosYProgramas/>
-      <p>hola</p>
     </Fragment>
   );
 };
