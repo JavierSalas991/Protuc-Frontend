@@ -28,6 +28,7 @@ const Empresas = () => {
                   <Col
                     className="d-flex justify-content-center align-items-center"
                     span={4}
+                    key={key}
                   >
                     <img src={imagen}></img>
                   </Col>
