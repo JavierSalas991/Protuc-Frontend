@@ -1,4 +1,4 @@
-import axios from "axios";
+import Axios from "axios";
 import React, { Fragment, useState, useEffect } from "react";
 import PublicidadHeader from "../common/PublicidadHeader";
 import CursosYProgramas from "./CursosYProgramas";
@@ -9,9 +9,16 @@ const Inicio = () => {
 
   const [infoGeneral, setInfoGeneral] = useState(null)
 
-  useEffect( async () => {
-    const res = await axios.get("http://flydevs.ddns.net/protucapi/home")
+   const getHome = async () => {
+    const res = await Axios.get("http://flydevs.ddns.net/protucapi/home")
     console.log(res)
+    return (res)
+}
+
+  useEffect( async () => {
+    console.log('se ejecuta useeffect')
+    setInfoGeneral(await getHome())
+    console.log(infoGeneral)
   }, [])
   return (
     <Fragment>
