@@ -38,7 +38,21 @@
   color: rgb(252, 192, 8);
 }
 .cuadro-blanco{
-  width: 30vh;
-  height: 26vh;
+  /* margin-top: 10%;
+  margin-bottom: 10%; */
+  width: 85%;
+  aspect-ratio: 2/1;
   background-color: #fff;
+}
+.contenedor-novedades{
+  aspect-ratio: 2/1;
+}
+.imagen-desplazada{
+  position: relative;
+  width: 100%;
+  top: 10%;
+  left: 4%;
+}
+.cartel-nuevo{
+  position: absolute;
 }
