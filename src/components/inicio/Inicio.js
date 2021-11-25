@@ -10,7 +10,7 @@ const Inicio = () => {
   const [infoGeneral, setInfoGeneral] = useState(null)
 
    const getHome = async () => {
-    const res = await Axios.get("http://flydevs.ddns.net/protucapi/home")
+    const res = await Axios.get("http://flydevs.ddns.net/home")
     console.log(res)
     return (res)
 }
