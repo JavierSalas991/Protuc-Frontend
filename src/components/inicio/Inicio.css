@@ -54,5 +54,26 @@
   left: 4%;
 }
 .cartel-nuevo{
-  position: absolute;
+  position: relative;
+  /* border: yellow solid 1px; */
+  background-color: rgb(25, 27, 50);
+  color: "#fff";
+  width: 50%;
+  aspect-ratio: 20/3;
+  /* height: 75%; */
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+  text-align: center;
+
+  left: 60%;
+  bottom: 70%;
+  transform: rotate(-25deg);
+  font-weight: bolder;
+  font-size: 25px;
+}
+.texto-nuevo{
+  /* font-size: 200%; */
+  margin: 0;
+  padding: 0;
 }
