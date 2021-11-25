@@ -23,7 +23,7 @@ const Novedades = () => {
               className="cartel-nuevo d-flex justify-content-center align-items-center"
               style={{
                 "background-color": "rgb(29, 33, 60)",
-                "color": "#fff",
+                color: "#fff",
               }}
             >
               <p>NUEVO</p>
