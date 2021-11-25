@@ -77,3 +77,15 @@
   margin: 0;
   padding: 0;
 }
+.lineaCeleste{
+  height: 40px;
+  border-left: 1px solid rgb(5, 217, 218);
+}
+.titulo-seccion-novedades{
+  color: #fff;
+  font-size: 35px;
+}
+.contenedor-novedades-derecho{
+  width: 80%;
+  height: 90%;
+}
