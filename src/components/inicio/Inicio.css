@@ -16,12 +16,10 @@
 #conoce-mas{
   color: rgb(5, 217, 218)
 }
-#cursos-y-programas{
+#background-azul-oscuro{
   background-color: rgb(25, 27, 50);
 }
-#titulo-cursos-y-programas{
-  font-size: 34px;
-}
+
 .categoria-seleccionada{
   color: rgb(5, 217, 218);
   border-bottom: rgb(5, 217, 218) solid 3px;
@@ -38,4 +36,63 @@
 }
 .colorsito-amarillo{
   color: rgb(252, 192, 8);
+}
+.cuadro-blanco{
+  /* margin-top: 10%;
+  margin-bottom: 10%; */
+  width: 85%;
+  aspect-ratio: 2/1;
+  background-color: #fff;
+}
+.contenedor-novedades{
+  aspect-ratio: 2/1;
+}
+.imagen-desplazada{
+  position: relative;
+  width: 100%;
+  top: 10%;
+  left: 4%;
+}
+.cartel-nuevo{
+  position: relative;
+  /* border: yellow solid 1px; */
+  background-color: rgb(25, 27, 50);
+  color: "#fff";
+  width: 50%;
+  aspect-ratio: 20/3;
+  /* height: 75%; */
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+  text-align: center;
+
+  left: 60%;
+  bottom: 70%;
+  transform: rotate(-25deg);
+  font-weight: bolder;
+  font-size: 25px;
+}
+.texto-nuevo{
+  /* font-size: 200%; */
+  margin: 0;
+  padding: 0;
+}
+.lineaCeleste{
+  height: 40px;
+  border-left: 1px solid rgb(5, 217, 218);
+}
+.titulo-seccion-novedades{
+  color: #fff;
+  font-size: 35px;
+}
+.subtitulo-seccion-novedades{
+  color: #fff;
+  font-size: 25px;
+}
+.contenedor-novedades-derecho{
+  width: 80%;
+  height: 90%;
+}
+.display-flex{
+  display: flex;
 }
