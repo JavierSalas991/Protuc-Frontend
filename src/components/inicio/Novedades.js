@@ -7,7 +7,7 @@ const Novedades = () => {
 
   let categorias = ["Cursos", "Convocatorias", "FAQs"];
   return (
-    <div id="background-azul-oscuro" className="pt-3 pb-2">
+    <div id="background-azul-oscuro" className="pt-3">
       <div
         className="d-flex justify-content-center"
         style={{ "font-size": "41px" }}
@@ -70,10 +70,26 @@ const Novedades = () => {
                 }
               })}
             </div>
-            <div classname="d-flex">
-              <p className="titulo-seccion-novedades">Recursos humanos</p>
-              <p className='colorsito-amarillo'>{iconos.estrella}{iconos.estrella}{iconos.estrella}</p>
-              <p className='colorsito-amarillo'>{iconos.estrella}{iconos.estrella}{iconos.estrella}</p>
+            <div>
+              <p>
+                {" "}
+                <strong className="titulo-seccion-novedades">
+                  Recursos Humanos{" "}
+                </strong>
+                <span className="colorsito-amarillo">
+                  {iconos.estrella}
+                  {iconos.estrella}
+                  {iconos.estrella}
+                </span>
+              </p>
+              <p className="subtitulo-seccion-novedades">
+                Capacitate para ingresar a la industria de software factory
+              </p>
+            </div>
+            <div className="d-flex justify-content-end">
+              <button className="boton-celeste-transparente px-4 pt-1 pb-2">
+                Conoce mas
+              </button>
             </div>
           </div>
         </div>

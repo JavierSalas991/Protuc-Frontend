@@ -13,6 +13,17 @@
 .boton-celeste:hover{
   background-color: rgb(10, 226, 230);
 }
+.boton-celeste-transparente{
+  color: rgb(4, 218, 220);
+  border: 1px solid rgb(4, 218, 220);
+  border-radius: 1000px;
+  background-color: transparent;
+  font-size: 20px;
+}
+.boton-celeste-transparente:hover{
+  color: #FFF;
+  background-color: rgb(4, 218, 220);
+}
 .cursor-pointer{
   cursor: pointer;
 }

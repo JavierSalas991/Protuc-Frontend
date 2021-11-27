@@ -85,7 +85,14 @@
   color: #fff;
   font-size: 35px;
 }
+.subtitulo-seccion-novedades{
+  color: #fff;
+  font-size: 25px;
+}
 .contenedor-novedades-derecho{
   width: 80%;
   height: 90%;
+}
+.display-flex{
+  display: flex;
 }

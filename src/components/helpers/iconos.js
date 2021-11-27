@@ -17,5 +17,5 @@ export const iconos = {
       />
     </svg>
   ),
-  estrella: <FontAwesomeIcon size='sm' icon={faStar} />
+  estrella: <FontAwesomeIcon size='lg' icon={faStar} />
 };
