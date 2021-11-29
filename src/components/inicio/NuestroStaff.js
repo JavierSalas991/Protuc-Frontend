@@ -2,52 +2,13 @@ import React, {useEffect} from "react";
 import { Carousel } from "react-bootstrap";
 import fondoCeleste from "../../img/fondoCeleste.png";
 
-const NuestroStaff = () => {
-
-    let staffPrueba = [
-        {
-            id: 1,
-            nombre: 'ejemplo 1',
-            especialidad: 'especialidad'
-        }, {
-            id: 2,
-            nombre: 'ejemplo 2',
-            especialidad: 'especialidad'
-        }, {
-            id: 3,
-            nombre: 'ejemplo 3',
-            especialidad: 'especialidad'
-        }, {
-            id: 4,
-            nombre: 'ejemplo 4',
-            especialidad: 'especialidad'
-        }, {
-            id: 5,
-            nombre: 'ejemplo 5',
-            especialidad: 'especialidad'
-        }, {
-            id: 6,
-            nombre: 'ejemplo 6',
-            especialidad: 'especialidad'
-        }, {
-            id: 7,
-            nombre: 'ejemplo 7',
-            especialidad: 'especialidad'
-        }
-
-    ]
-
+const NuestroStaff = ({docentes}) => {
 
     const construirArregle = () => {
         let staffSeparado = []
-        // staffPrueba.map(())
         staffSeparado[0].push('hola')
         console.log(staffSeparado)
     }
-
-    useEffect(() => {
-        construirArregle()
-    }, [])
 
   return (
     <Carousel>
