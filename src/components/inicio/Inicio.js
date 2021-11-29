@@ -4,6 +4,7 @@ import Header from "./Header";
 import Empresas from "./Empresas";
 import CursosYProgramas from "./CursosYProgramas";
 import Novedades from "./Novedades";
+import NuestroStaff from "./NuestroStaff";
 
 const Inicio = () => {
   return (
@@ -13,6 +14,7 @@ const Inicio = () => {
       <Empresas />
       <CursosYProgramas />
       <Novedades />
+      <NuestroStaff />
     </Fragment>
   );
 };
