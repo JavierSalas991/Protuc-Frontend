@@ -23,8 +23,9 @@ const Inicio = () => {
   return (
     <Fragment>
       {infoGeneral ? (
-        <>
-          <PublicidadHeader />
+        <>{infoGeneral.banner_header[0].activo?
+          <PublicidadHeader banner_header={infoGeneral.banner_header[0]}/>
+        : null }
           <Header />
           <Empresas />
           <CursosYProgramas />

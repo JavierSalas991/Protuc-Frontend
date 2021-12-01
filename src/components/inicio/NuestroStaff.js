@@ -5,19 +5,16 @@ import fondoNaranja from "../../img/fondoNaranja.png";
 import fondoVerde from "../../img/fondoVerde.png";
 
 const NuestroStaff = ({ docentes }) => {
-  console.log(docentes);
 
   const construirArregloo = () => {
     let staffSeparado = [];
     staffSeparado[0].push("hola");
-    console.log(staffSeparado);
   };
 
   return (
     <Carousel indicators={false}>
       {docentes.map((docente, key) => {
         if (key < docentes.length - 2) {
-          console.log(key);
           return (
             <Carousel.Item>
               <img
