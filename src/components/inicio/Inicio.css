@@ -6,54 +6,54 @@
   z-index: 5;
   /* font-size: larger; */
 }
-.links-nav{
-    font-size: x-large;
+.links-nav {
+  font-size: x-large;
 }
-#clase-empresas{
+#clase-empresas {
   background-color: rgb(0, 12, 54);
   font-size: 22px;
 }
-#conoce-mas{
-  color: rgb(5, 217, 218)
+#conoce-mas {
+  color: rgb(5, 217, 218);
 }
-#background-azul-oscuro{
+#background-azul-oscuro {
   background-color: rgb(25, 27, 50);
 }
 
-.categoria-seleccionada{
+.categoria-seleccionada {
   color: rgb(5, 217, 218);
   border-bottom: rgb(5, 217, 218) solid 3px;
   border-radius: 5px;
   font-size: 20px;
 }
-.categoria{
+.categoria {
   color: #fff;
   font-size: 20px;
 }
 
-.colorsito-celeste{
+.colorsito-celeste {
   color: rgb(5, 217, 218);
 }
-.colorsito-amarillo{
+.colorsito-amarillo {
   color: rgb(252, 192, 8);
 }
-.cuadro-blanco{
+.cuadro-blanco {
   /* margin-top: 10%;
   margin-bottom: 10%; */
   width: 85%;
   aspect-ratio: 2/1;
   background-color: #fff;
 }
-.contenedor-novedades{
+.contenedor-novedades {
   aspect-ratio: 2/1;
 }
-.imagen-desplazada{
+.imagen-desplazada {
   position: relative;
   width: 100%;
   top: 10%;
   left: 4%;
 }
-.cartel-nuevo{
+.cartel-nuevo {
   position: relative;
   /* border: yellow solid 1px; */
   background-color: rgb(25, 27, 50);
@@ -72,27 +72,39 @@
   font-weight: bolder;
   font-size: 25px;
 }
-.texto-nuevo{
+.texto-nuevo {
   /* font-size: 200%; */
   margin: 0;
   padding: 0;
 }
-.lineaCeleste{
+.lineaCeleste {
   height: 40px;
   border-left: 1px solid rgb(5, 217, 218);
 }
-.titulo-seccion-novedades{
+.titulo-seccion-novedades {
   color: #fff;
   font-size: 35px;
 }
-.subtitulo-seccion-novedades{
+.subtitulo-seccion-novedades {
   color: #fff;
   font-size: 25px;
 }
-.contenedor-novedades-derecho{
+.contenedor-novedades-derecho {
   width: 80%;
   height: 90%;
 }
-.display-flex{
+.display-flex {
   display: flex;
+}
+.img-docente {
+  border: #fff 6px solid;
+  border-radius: 1000px;
+  width: 33vh;
+  aspect-ratio: 1/1
+}
+.card-docente{
+  margin-top: 10%;
+  border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 5/2
 }
