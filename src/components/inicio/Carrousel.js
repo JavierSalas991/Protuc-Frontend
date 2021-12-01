@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import protuc_slider from '../../img/Protuc_slider.jpg'
+import fondoCeleste from '../../img/fondoCeleste.png'
 
 const Carrousel = () => {
   return (
@@ -8,7 +8,7 @@ const Carrousel = () => {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          src={protuc_slider}
+          src={fondoCeleste}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -19,7 +19,7 @@ const Carrousel = () => {
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src={protuc_slider}
+          src={fondoCeleste}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -30,7 +30,7 @@ const Carrousel = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={protuc_slider}
+          src={fondoCeleste}
           alt="Third slide"
         />
         <Carousel.Caption>
