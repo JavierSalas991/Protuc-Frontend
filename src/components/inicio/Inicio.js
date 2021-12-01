@@ -16,7 +16,8 @@ const Inicio = () => {
   };
 
   useEffect(async () => {
-    setInfoGeneral(await getHome());
+    let res = (await getHome());
+    setInfoGeneral(res.data)
   }, []);
 
   return (
