@@ -2,12 +2,10 @@ import React from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { iconos } from "../helpers/iconos";
 
-const NavbarProtuc = () => {
-
+const NavHamburguesa = () => {
 
   return (
-    <div className="nav-bar row">
-      <Navbar variant="dark" expand="lg">
+      <Navbar variant="dark" className='nav-hamburguesa' expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -28,8 +26,7 @@ const NavbarProtuc = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
   );
 };
 
-export default NavbarProtuc;
+export default NavHamburguesa;

@@ -19,7 +19,9 @@ const PublicidadHeader = ({ banner_header }) => {
         </Col>
         <Col span={4} className="h-100">
           <div className="d-flex h-100 justify-content-center align-items-center">
-            <button className="boton-celeste px-4 pt-1 pb-2">
+            <button 
+            className="boton-celeste px-4 pt-1 pb-2"
+            style={{"white-space": 'nowrap'}}>
               {banner_header.texto_boton}
             </button>
           </div>
