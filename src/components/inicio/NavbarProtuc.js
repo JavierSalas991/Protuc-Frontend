@@ -3,8 +3,6 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { iconos } from "../helpers/iconos";
 
 const NavbarProtuc = () => {
-
-
   return (
     <div className="nav-bar row">
       <Navbar variant="dark" expand="lg">
@@ -13,16 +11,16 @@ const NavbarProtuc = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link className="links-nav" href="#cursos">
-                Cursos {iconos.dropDown}
+                <p className="p-navbar">Cursos {iconos.dropDown}</p>
               </Nav.Link>
               <Nav.Link className="links-nav" href="#certificaciones">
-                Certificaciones {iconos.dropDown}
+                <p className="p-navbar">Certificaciones</p>
               </Nav.Link>
               <Nav.Link className="links-nav" href="#quienessomos">
-                Quienes somos {iconos.dropDown}
+                <p className="p-navbar">Quienes somos</p>
               </Nav.Link>
               <Nav.Link className="links-nav" href="#empresas">
-                Empresas {iconos.dropDown}
+                <p className="p-navbar">Empresas</p>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

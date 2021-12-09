@@ -10,17 +10,17 @@ const NavHamburguesa = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className="links-nav" href="#cursos">
-                Cursos {iconos.dropDown}
+            <Nav.Link className="links-nav-hamb" href="#cursos">
+                <p className="p-navbar">Cursos {iconos.dropDown}</p>
               </Nav.Link>
-              <Nav.Link className="links-nav" href="#certificaciones">
-                Certificaciones {iconos.dropDown}
+              <Nav.Link className="links-nav-hamb" href="#certificaciones">
+                <p className="p-navbar">Certificaciones</p>
               </Nav.Link>
-              <Nav.Link className="links-nav" href="#quienessomos">
-                Quienes somos {iconos.dropDown}
+              <Nav.Link className="links-nav-hamb" href="#quienessomos">
+                <p className="p-navbar">Quienes somos</p>
               </Nav.Link>
-              <Nav.Link className="links-nav" href="#empresas">
-                Empresas {iconos.dropDown}
+              <Nav.Link className="links-nav-hamb" href="#empresas">
+                <p className="p-navbar">Empresas</p>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

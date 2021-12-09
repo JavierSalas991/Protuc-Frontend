@@ -3,6 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: arial-rounded;
+  src: url(./fuentes/ARLRDBD.TTF);
+}
+@font-face {
+  font-family: aventa;
+  src: url(./fuentes/AVENTA-LIGHTPERSONALUSEONLY.OTF);
+}
+@font-face {
+  font-family: fredoka-one;
+  src: url(./fuentes/FREDOKAONE-REGULAR.TTF);
+}
+
+
 .boton-celeste{
   color: #FFF;
   border: none;

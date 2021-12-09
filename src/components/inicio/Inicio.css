@@ -5,13 +5,28 @@
   left: 70px;
   z-index: 5;
   /* font-size: larger; */
+  font-family: arial-rounded;
 }
-.nav-hamburguesa{
+.nav-hamburguesa {
   background-color: rgb(0, 12, 54);
 }
 .links-nav {
   font-size: x-large;
 }
+.p-navbar {
+  color: #fff;
+}
+.p-navbar:hover {
+  color: rgb(5, 217, 218);
+  padding: 0;
+  margin: 0;
+}
+.links-nav-hamb {
+  font-size: large;
+  padding: 0;
+  margin: 0;
+}
+
 #clase-empresas {
   background-color: rgb(0, 12, 54);
   font-size: 22px;
@@ -104,15 +119,15 @@
   border: #fff 6px solid;
   border-radius: 1000px;
   width: 33vh;
-  aspect-ratio: 1/1
+  aspect-ratio: 1/1;
 }
-.card-docente{
+.card-docente {
   margin-top: 10%;
   border-radius: 10px;
   width: 100%;
-  aspect-ratio: 5/2
+  aspect-ratio: 5/2;
 }
-.aspect-2-1{
+.aspect-2-1 {
   aspect-ratio: 10/7;
 }
 
@@ -124,9 +139,7 @@
     min-height: 250px;
   }
 }
-@media  (min-width: 435px) and (max-width: 991px)  {
-  
+@media (min-width: 435px) and (max-width: 991px) {
 }
-@media  (min-width: 992px) {
-  
+@media (min-width: 992px) {
 }
