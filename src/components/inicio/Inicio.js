@@ -6,26 +6,29 @@ import CursosYProgramas from "./CursosYProgramas";
 import Novedades from "./Novedades";
 import NuestroStaff from "./NuestroStaff";
 import Axios from "axios";
+import NavHamburguesa from "./NavHamburguesa";
 
 const Inicio = () => {
   const [infoGeneral, setInfoGeneral] = useState(null);
 
   const getHome = async () => {
-    const res = await Axios.get("http://flydevs.ddns.net/home/");
+    const res = await Axios.get("http://flydevs.ddns.net/protucapi/home/");
     return res;
   };
 
   useEffect(async () => {
-    let res = (await getHome());
-    setInfoGeneral(res.data)
+    let res = await getHome();
+    setInfoGeneral(res.data);
   }, []);
 
   return (
     <Fragment>
       {infoGeneral ? (
-        <>{infoGeneral.banner_header[0].activo?
-          <PublicidadHeader banner_header={infoGeneral.banner_header[0]}/>
-        : null }
+        <>
+          {window.innerWidth <= 991 ? <NavHamburguesa /> : null}
+          {infoGeneral.banner_header[0].activo ? (
+            <PublicidadHeader banner_header={infoGeneral.banner_header[0]} />
+          ) : null}
           <Header />
           <Empresas />
           <CursosYProgramas />

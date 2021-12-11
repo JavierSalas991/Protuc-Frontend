@@ -31,8 +31,8 @@ const NuestroStaff = ({ docentes }) => {
                       alt={`${docente.nombre} ${docente.apellido}`}
                     ></img>
                     <div className="card-docente bg-light text-dark">
-                      <p>{docente.alias}</p>
-                      <p>{docente.titulo_grado}</p>
+                      <p className='arial-rounded'>{docente.alias}</p>
+                      <p className='aventa'>{docente.titulo_grado}</p>
                     </div>
                   </div>
                   {docentes[key + 1] ? (
@@ -47,8 +47,8 @@ const NuestroStaff = ({ docentes }) => {
                         }`}
                       ></img>
                       <div className="card-docente bg-light text-dark">
-                        <p>{docentes[key + 1].alias}</p>
-                        <p>{docentes[key + 1].titulo_grado}</p>
+                        <p  className='arial-rounded'>{docentes[key + 1].alias}</p>
+                        <p className='aventa'>{docentes[key + 1].titulo_grado}</p>
                       </div>
                     </div>
                   ) : null}
@@ -64,8 +64,8 @@ const NuestroStaff = ({ docentes }) => {
                         }`}
                       ></img>
                       <div className="card-docente bg-light text-dark pt-2">
-                        <p>{docentes[key + 2].alias}</p>
-                        <p>{docentes[key + 2].titulo_grado}</p>
+                        <p className='arial-rounded'>{docentes[key + 2].alias}</p>
+                        <p className='aventa'>{docentes[key + 2].titulo_grado}</p>
                       </div>
                     </div>
                   ) : null}

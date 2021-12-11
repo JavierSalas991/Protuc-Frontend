@@ -4,14 +4,33 @@
   top: 98px;
   left: 70px;
   z-index: 5;
-  /* font-size: larger; */
+  font-family: fredoka-one;
+}
+.nav-hamburguesa {
+  background-color: rgb(0, 12, 54);
 }
 .links-nav {
   font-size: x-large;
 }
+.p-navbar {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.p-navbar:hover {
+  color: rgb(5, 217, 218);
+}
+.links-nav-hamb {
+  font-size: large;
+  /* padding: 0;
+  margin: 0; */
+}
+
 #clase-empresas {
   background-color: rgb(0, 12, 54);
   font-size: 22px;
+  min-height: 180px;
+  font-family: arial-rounded;
 }
 #conoce-mas {
   color: rgb(5, 217, 218);
@@ -100,11 +119,27 @@
   border: #fff 6px solid;
   border-radius: 1000px;
   width: 33vh;
-  aspect-ratio: 1/1
+  aspect-ratio: 1/1;
 }
-.card-docente{
+.card-docente {
   margin-top: 10%;
   border-radius: 10px;
   width: 100%;
-  aspect-ratio: 5/2
+  aspect-ratio: 5/2;
+}
+.aspect-2-1 {
+  aspect-ratio: 10/7;
+}
+
+@media (max-width: 434px) {
+  #clase-empresas {
+    font-size: 16px;
+  }
+  #clase-empresas {
+    min-height: 250px;
+  }
+}
+@media (min-width: 435px) and (max-width: 991px) {
+}
+@media (min-width: 992px) {
 }

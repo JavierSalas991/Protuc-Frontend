@@ -7,7 +7,7 @@ const Novedades = () => {
 
   let categorias = ["Cursos", "Convocatorias", "FAQs"];
   return (
-    <div id="background-azul-oscuro" className="pt-3">
+    <div id="background-azul-oscuro" className="pt-3 arial-rounded">
       <div
         className="d-flex justify-content-center"
         style={{ "font-size": "41px" }}
@@ -82,7 +82,7 @@ const Novedades = () => {
                   {iconos.estrella}
                 </span>
               </p>
-              <p className="subtitulo-seccion-novedades">
+              <p className="subtitulo-seccion-novedades aventa">
                 Capacitate para ingresar a la industria de software factory
               </p>
             </div>

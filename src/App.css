@@ -2,13 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: arial-rounded; */
+
 }
+
+@font-face {
+  font-family: arial-rounded;
+  src: url(./fuentes/ARLRDBD.TTF);
+}
+@font-face {
+  font-family: aventa;
+  src: url(./fuentes/AVENTA-LIGHTPERSONALUSEONLY.OTF);
+}
+@font-face {
+  font-family: fredoka-one;
+  src: url(./fuentes/FREDOKAONE-REGULAR.TTF);
+}
+
+.arial-rounded{
+  font-family: arial-rounded;
+}
+.aventa{
+  font-family: aventa;
+}
+
 .boton-celeste{
   color: #FFF;
   border: none;
   border-radius: 1000px;
   background-color: rgb(4, 218, 220);
   font-size: 20px;
+  font-family: arial-rounded;
 }
 .boton-celeste:hover{
   background-color: rgb(10, 226, 230);
@@ -19,6 +43,7 @@
   border-radius: 1000px;
   background-color: transparent;
   font-size: 20px;
+  font-family: arial-rounded;
 }
 .boton-celeste-transparente:hover{
   color: #FFF;
