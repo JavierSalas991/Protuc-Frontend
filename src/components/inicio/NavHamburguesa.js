@@ -5,9 +5,9 @@ import { iconos } from "../helpers/iconos";
 const NavHamburguesa = () => {
 
   return (
-      <Navbar variant="dark" className='nav-hamburguesa' expand="lg">
+      <Navbar variant="dark" className='nav-hamburguesa arial-rounded' expand="lg">
         <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
             <Nav.Link className="links-nav-hamb" href="#cursos">

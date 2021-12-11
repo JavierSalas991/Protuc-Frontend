@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: arial-rounded; */
+
 }
 
 @font-face {
@@ -17,6 +19,12 @@
   src: url(./fuentes/FREDOKAONE-REGULAR.TTF);
 }
 
+.arial-rounded{
+  font-family: arial-rounded;
+}
+.aventa{
+  font-family: aventa;
+}
 
 .boton-celeste{
   color: #FFF;

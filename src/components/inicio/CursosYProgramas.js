@@ -18,7 +18,7 @@ const CursosYProgramas = () => {
   ];
 
   return (
-    <div id="background-azul-oscuro" className="pt-3 pb-2">
+    <div id="background-azul-oscuro" className="pt-3 pb-2 arial-rounded">
       <div style={{'font-size': '34px'}}>
         <div className="d-flex justify-content-center">
           <p className="text-light">Conoce nuestros cursos y programas</p>

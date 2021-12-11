@@ -4,8 +4,7 @@
   top: 98px;
   left: 70px;
   z-index: 5;
-  /* font-size: larger; */
-  font-family: arial-rounded;
+  font-family: fredoka-one;
 }
 .nav-hamburguesa {
   background-color: rgb(0, 12, 54);
@@ -15,22 +14,23 @@
 }
 .p-navbar {
   color: #fff;
+  padding: 0;
+  margin: 0;
 }
 .p-navbar:hover {
   color: rgb(5, 217, 218);
-  padding: 0;
-  margin: 0;
 }
 .links-nav-hamb {
   font-size: large;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 }
 
 #clase-empresas {
   background-color: rgb(0, 12, 54);
   font-size: 22px;
   min-height: 180px;
+  font-family: arial-rounded;
 }
 #conoce-mas {
   color: rgb(5, 217, 218);

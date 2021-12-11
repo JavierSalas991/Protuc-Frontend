@@ -8,7 +8,9 @@ const PublicidadHeader = ({ banner_header }) => {
       <Row className="h-100">
         <Col span={5}>1</Col>
         <Col span={10} className="h-100">
-          <div className="d-flex h-100 flex-column justify-content-center align-items-center">
+          <div 
+          className="d-flex h-100 flex-column justify-content-center align-items-center"
+          style={{"font-family" : "arial-rounded"}}>
             <h4 id="titulo-publicidad" className="mt-2">
               {banner_header.texto_principal}
             </h4>
