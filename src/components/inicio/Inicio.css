@@ -1,7 +1,7 @@
 .nav-bar {
   background-color: transparent;
   position: absolute;
-  top: 98px;
+  top: 120px;
   left: 70px;
   z-index: 5;
   font-family: fredoka-one;
@@ -138,8 +138,20 @@
   #clase-empresas {
     min-height: 250px;
   }
+  .nav-bar {
+    top: 98px;
+  }
 }
-@media (min-width: 435px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px){
+
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .nav-bar {
+    top: 120px;
+  }
+}
+@media (min-width: 1400px){
+  .nav-bar {
+    top: 135px;
+  }
 }

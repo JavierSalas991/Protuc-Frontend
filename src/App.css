@@ -1,9 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* font-family: arial-rounded; */
-
 }
 
 @font-face {
@@ -19,25 +18,25 @@
   src: url(./fuentes/FREDOKAONE-REGULAR.TTF);
 }
 
-.arial-rounded{
+.arial-rounded {
   font-family: arial-rounded;
 }
-.aventa{
+.aventa {
   font-family: aventa;
 }
 
-.boton-celeste{
-  color: #FFF;
+.boton-celeste {
+  color: #fff;
   border: none;
   border-radius: 1000px;
   background-color: rgb(4, 218, 220);
-  font-size: 20px;
+  /* font-size: 20px; */
   font-family: arial-rounded;
 }
-.boton-celeste:hover{
+.boton-celeste:hover {
   background-color: rgb(10, 226, 230);
 }
-.boton-celeste-transparente{
+.boton-celeste-transparente {
   color: rgb(4, 218, 220);
   border: 1px solid rgb(4, 218, 220);
   border-radius: 1000px;
@@ -45,10 +44,36 @@
   font-size: 20px;
   font-family: arial-rounded;
 }
-.boton-celeste-transparente:hover{
-  color: #FFF;
+.boton-celeste-transparente:hover {
+  color: #fff;
   background-color: rgb(4, 218, 220);
 }
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
+}
+
+@media (max-width: 434px) {
+  .boton-celeste {
+    font-size: 1px;
+  }
+}
+@media (min-width: 435px) and (max-width: 699px) {
+  .boton-celeste {
+    font-size: 12px;
+  }
+}
+@media (min-width: 700px) and (max-width: 991px) {
+  .boton-celeste {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .boton-celeste {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .boton-celeste {
+    font-size: 22px;
+  }
 }
