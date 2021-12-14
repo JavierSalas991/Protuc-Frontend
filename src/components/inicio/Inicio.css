@@ -130,6 +130,12 @@
 .aspect-2-1 {
   aspect-ratio: 10/7;
 }
+.item-carousel-empresas{
+  aspect-ratio: 12/1;
+}
+.item-carousel-empresas{
+  aspect-ratio: 9/1;
+}
 
 @media (max-width: 434px) {
   #clase-empresas {
@@ -140,6 +146,9 @@
   }
   .nav-bar {
     top: 98px;
+  }
+  .item-carousel-empresas{
+    aspect-ratio: 9/1;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
