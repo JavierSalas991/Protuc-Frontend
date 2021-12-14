@@ -1,8 +1,50 @@
-#fondo{
-    background: linear-gradient(to bottom, rgb(23, 80, 157), rgb(5, 178, 234));
-    height: 6rem;
+#fondo {
+  background: linear-gradient(to bottom, rgb(23, 80, 157), rgb(5, 178, 234));
+  width: 100%;
+  aspect-ratio: 11/1;
 }
-#titulo-publicidad{
-    color: #fff;
-    font-size: 24px
+#titulo-publicidad {
+  color: #fff;
+  /* font-size: 150%; */
+}
+#subtitulo-publicidad {
+  color: #fff;
+}
+@media (max-width: 434px) {
+  #titulo-publicidad {
+    font-size: 50%;
+  }
+  #subtitulo-publicidad {
+    font-size: 30%;
+  }
+  #fondo{
+      aspect-ratio: 7/1;
+  }
+}
+@media (min-width: 435px) and (max-width: 991px) {
+  #titulo-publicidad {
+    font-size: 100%;
+  }
+  #subtitulo-publicidad {
+    font-size: 80%;
+  }
+  #fondo{
+    aspect-ratio: 9/1;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #titulo-publicidad {
+    font-size: 130%;
+  }
+  #subtitulo-publicidad {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #titulo-publicidad {
+    font-size: 170%;
+  }
+  #subtitulo-publicidad {
+    font-size: 120%;
+  }
 }

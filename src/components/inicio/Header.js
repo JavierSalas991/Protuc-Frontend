@@ -26,7 +26,7 @@ const Header = () => {
     //   }, [window.innerHeight])
   return (
     <Fragment>
-      {window.innerWidth > 991 ? <NavbarProtuc /> : null}
+      <NavbarProtuc />
       <Carrousel />
     </Fragment>
   );

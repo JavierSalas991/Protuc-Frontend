@@ -8,7 +8,14 @@ import empresa5 from "../../img/empresas/empresa5.png";
 import { Carousel } from "react-bootstrap";
 
 const Empresas = () => {
-  let imagenesEmpresas = [empresa3, empresa2, empresa1, empresa5, empresa4];
+  let imagenesEmpresas = [
+    empresa3,
+    empresa2,
+    empresa1,
+    empresa5,
+    empresa4,
+    empresa1,
+  ];
 
   return (
     <Fragment>
@@ -22,40 +29,115 @@ const Empresas = () => {
               Conoce mas
             </a>
           </div>
-          {window.innerWidth > 991 ? (
-            <Row
-              justify="space-around"
-              gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
-            >
+         
+         {/* dispositivos grandes */}
+          <div className="seccion-carousel-empresas d-none d-md-block">
+            <Carousel indicators={false}>
               {imagenesEmpresas.map((imagen, key) => {
-                if (key < 5) {
+                if (key % 5 === 0) {
                   return (
-                    <Col span={4} classname="gutter-row">
-                      <div className="d-flex justify-content-center align-items-center">
-                        <img src={imagen}></img>
+                    <Carousel.Item className="w-100 text-center item-carousel-empresas">
+                      <div className="h-100 row">
+                        <div className="h-100 d-flex justify-content-center">
+                          {imagenesEmpresas[key] ? (
+                            <div className="col-2 h-100 d-flex justify-content-center">
+                              <img
+                                className="h-100"
+                                src={imagenesEmpresas[key]}
+                                alt="First slide"
+                              />
+                            </div>
+                          ) : null}
+                          {imagenesEmpresas[key+1] ? (
+                            <div className="col-2 h-100 d-flex justify-content-center">
+                              <img
+                                className="h-100"
+                                src={imagenesEmpresas[key+1]}
+                                alt="First slide"
+                              />
+                            </div>
+                          ) : null}
+                          {imagenesEmpresas[key+2] ? (
+                            <div className="col-2 h-100 d-flex justify-content-center">
+                              <img
+                                className="h-100"
+                                src={imagenesEmpresas[key+2]}
+                                alt="First slide"
+                              />
+                            </div>
+                          ) : null}
+                          {imagenesEmpresas[key+3] ? (
+                            <div className="col-2 h-100 d-flex justify-content-center">
+                              <img
+                                className="h-100"
+                                src={imagenesEmpresas[key+3]}
+                                alt="First slide"
+                              />
+                            </div>
+                          ) : null}
+                          {imagenesEmpresas[key+4] ? (
+                            <div className="col-2 h-100 d-flex justify-content-center">
+                              <img
+                                className="h-100"
+                                src={imagenesEmpresas[key+4]}
+                                alt="First slide"
+                              />
+                            </div>
+                          ) : null}
+                         
+                        </div>
                       </div>
-                    </Col>
+             
+                    </Carousel.Item>
                   );
                 }
               })}
-            </Row>
-          ) : null}
-          <div className="seccion-carousel-empresas">
+            </Carousel>
+          </div>
+
+          {/* dispositivos chicos */}
+          <div className="seccion-carousel-empresas d-inline d-md-none">
             <Carousel indicators={false}>
-              {imagenesEmpresas.map((imagen) => {
-                return (
-                  <Carousel.Item className="w-100 aspect-2-1 bg-primary text-center">
-                    <div className="w-100 h-100 d-flex justify-content-center">
-                      <div className="w-75 h-100 bg-secondary">
-                        <img
-                          className="w-100"
-                          src={imagen}
-                          alt="First slide"
-                        />
+              {imagenesEmpresas.map((imagen, key) => {
+                if (key % 3 === 0) {
+                  return (
+                    <Carousel.Item className="w-100 text-center item-carousel-empresas">
+                      <div className="h-100 row">
+                        <div className="h-100 d-flex justify-content-center">
+                          {imagenesEmpresas[key] ? (
+                            <div className="col-3 h-100 d-flex justify-content-center">
+                              <img
+                                className="h-100"
+                                src={imagenesEmpresas[key]}
+                                alt="First slide"
+                              />
+                            </div>
+                          ) : null}
+                          {imagenesEmpresas[key+1] ? (
+                            <div className="col-3 h-100 d-flex justify-content-center">
+                              <img
+                                className="h-100"
+                                src={imagenesEmpresas[key+1]}
+                                alt="First slide"
+                              />
+                            </div>
+                          ) : null}
+                          {imagenesEmpresas[key+2] ? (
+                            <div className="col-3 h-100 d-flex justify-content-center">
+                              <img
+                                className="h-100"
+                                src={imagenesEmpresas[key+2]}
+                                alt="First slide"
+                              />
+                            </div>
+                          ) : null}
+                         
+                        </div>
                       </div>
-                    </div>
-                  </Carousel.Item>
-                );
+        
+                    </Carousel.Item>
+                  );
+                }
               })}
             </Carousel>
           </div>

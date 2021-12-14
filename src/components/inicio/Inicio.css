@@ -1,7 +1,7 @@
 .nav-bar {
   background-color: transparent;
   position: absolute;
-  top: 98px;
+  top: 120px;
   left: 70px;
   z-index: 5;
   font-family: fredoka-one;
@@ -130,6 +130,12 @@
 .aspect-2-1 {
   aspect-ratio: 10/7;
 }
+.item-carousel-empresas{
+  aspect-ratio: 12/1;
+}
+.item-carousel-empresas{
+  aspect-ratio: 9/1;
+}
 
 @media (max-width: 434px) {
   #clase-empresas {
@@ -138,8 +144,31 @@
   #clase-empresas {
     min-height: 250px;
   }
+  .nav-bar {
+    top: 98px;
+  }
+  .item-carousel-empresas{
+    aspect-ratio: 9/1;
+  }
 }
-@media (min-width: 435px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contenedor-nav-hamb {
+    display: none;
+  }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .nav-bar {
+    top: 120px;
+  }
+  .contenedor-nav-hamb {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .nav-bar {
+    top: 135px;
+  }
+  .contenedor-nav-hamb {
+    display: none;
+  }
 }

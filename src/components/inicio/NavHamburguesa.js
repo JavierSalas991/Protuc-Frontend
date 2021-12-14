@@ -5,6 +5,7 @@ import { iconos } from "../helpers/iconos";
 const NavHamburguesa = () => {
 
   return (
+    <div className="d-inline d-lg-none">
       <Navbar variant="dark" className='nav-hamburguesa arial-rounded' expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -26,6 +27,7 @@ const NavHamburguesa = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+    </div>
   );
 };
 
