@@ -4,7 +4,7 @@ import { iconos } from "../helpers/iconos";
 
 const NavbarProtuc = () => {
   return (
-    <div className="nav-bar row">
+    <div className="nav-bar row d-none d-lg-block">
       <Navbar variant="dark" expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

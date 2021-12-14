@@ -25,7 +25,7 @@ const Inicio = () => {
     <Fragment>
      
         <>
-          {window.innerWidth <= 991 ? <NavHamburguesa /> : null}
+          <NavHamburguesa />
           {/* {infoGeneral.banner_header[0].activo ? (
             <PublicidadHeader banner_header={infoGeneral.banner_header[0]} />
           ) : null} */}

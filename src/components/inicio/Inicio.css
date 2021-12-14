@@ -142,16 +142,24 @@
     top: 98px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px){
-
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contenedor-nav-hamb {
+    display: none;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .nav-bar {
     top: 120px;
   }
+  .contenedor-nav-hamb {
+    display: none;
+  }
 }
-@media (min-width: 1400px){
+@media (min-width: 1400px) {
   .nav-bar {
     top: 135px;
+  }
+  .contenedor-nav-hamb {
+    display: none;
   }
 }
