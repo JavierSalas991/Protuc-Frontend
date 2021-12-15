@@ -36,6 +36,18 @@
 .boton-celeste:hover {
   background-color: rgb(10, 226, 230);
 }
+
+.boton-celeste-slider {
+  color: #fff;
+  border: none;
+  border-radius: 1000px;
+  background-color: rgb(4, 218, 220);
+  /* font-size: 20px; */
+  font-family: arial-rounded;
+}
+.boton-celeste-slider:hover {
+  background-color: rgb(10, 226, 230);
+}
 .boton-celeste-transparente {
   color: rgb(4, 218, 220);
   border: 1px solid rgb(4, 218, 220);
@@ -54,26 +66,41 @@
 
 @media (max-width: 434px) {
   .boton-celeste {
-    font-size: 1px;
+    font-size: 10px;
+  }
+  .boton-celeste-slider {
+    font-size: 7px;
   }
 }
 @media (min-width: 435px) and (max-width: 699px) {
   .boton-celeste {
     font-size: 12px;
   }
+  .boton-celeste-slider {
+    font-size: 10px;
+  }
 }
 @media (min-width: 700px) and (max-width: 991px) {
   .boton-celeste {
     font-size: 15px;
+  }
+  .boton-celeste-slider {
+    font-size: 12px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .boton-celeste {
     font-size: 20px;
   }
+  .boton-celeste-slider {
+    font-size: 15px;
+  }
 }
 @media (min-width: 1200px) {
   .boton-celeste {
     font-size: 22px;
+  }
+  .boton-celeste-slider {
+    font-size: 18px;
   }
 }

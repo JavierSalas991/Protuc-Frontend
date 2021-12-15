@@ -23,19 +23,19 @@ const Inicio = () => {
 
   return (
     <Fragment>
-     
+      {infoGeneral ? (
         <>
           <NavHamburguesa />
-          {/* {infoGeneral.banner_header[0].activo ? (
+          {infoGeneral.banner_header[0].activo ? (
             <PublicidadHeader banner_header={infoGeneral.banner_header[0]} />
-          ) : null} */}
-          <Header />
+          ) : null}
+          <Header infoGeneral={infoGeneral} />
           <Empresas />
           <CursosYProgramas />
           <Novedades />
-          {/* <NuestroStaff docentes={infoGeneral.docentes} /> */}
+          <NuestroStaff docentes={infoGeneral.docentes} />
         </>
-     
+      ) : null}
     </Fragment>
   );
 };
