@@ -136,6 +136,9 @@
 .item-carousel-empresas{
   aspect-ratio: 9/1;
 }
+.boton-carousel-next{
+  background-color: red;
+}
 
 @media (max-width: 434px) {
   #clase-empresas {
