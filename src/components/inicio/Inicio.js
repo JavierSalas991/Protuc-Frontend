@@ -25,10 +25,10 @@ const Inicio = () => {
     <Fragment>
       {infoGeneral ? (
         <>
-          <NavHamburguesa />
           {infoGeneral.banner_header[0].activo ? (
             <PublicidadHeader banner_header={infoGeneral.banner_header[0]} />
           ) : null}
+          <NavHamburguesa />
           <Header infoGeneral={infoGeneral} />
           <Empresas />
           <CursosYProgramas />
