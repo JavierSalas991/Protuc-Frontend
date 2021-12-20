@@ -6,7 +6,7 @@ const PublicidadHeader = ({ banner_header }) => {
   console.log(banner_header);
   return (
     <div id="fondo" className="text-light">
-      <div className="d-none d-sm-block h-100">
+      <div className="d-none d-md-block h-100">
         <div className="row h-100 container-fluid">
           <div className="col-3 h-100  d-flex justify-content-center">
          
@@ -25,9 +25,9 @@ const PublicidadHeader = ({ banner_header }) => {
               <h4 id="titulo-publicidad" className="mt-2 text-center">
                 {banner_header.texto_principal}
               </h4>
-              {/* {banner_header.texto_secundario !== "" ? (
+              {banner_header.texto_secundario !== "" ? (
                 <p id="subtitulo-publicidad">{banner_header.texto_secundario}</p>
-              ) : null} */}
+              ) : null}
             </div>
           </div>
           <div className="col-2 h-100">
@@ -51,7 +51,7 @@ const PublicidadHeader = ({ banner_header }) => {
       </div>
 
 
-      <div className="d-inline d-sm-none h-100">
+      <div className="d-inline d-md-none h-100">
         <div className="row h-100 container-fluid">
           <div className="col-3 h-100  d-flex justify-content-center">
          
@@ -62,7 +62,7 @@ const PublicidadHeader = ({ banner_header }) => {
               ></img>
          
           </div>
-          <div className="col-5 h-100">
+          <div className="col-7 h-100">
             <div
               className="d-flex h-100 flex-column justify-content-center align-items-center"
               style={{ "font-family": "arial-rounded" }}

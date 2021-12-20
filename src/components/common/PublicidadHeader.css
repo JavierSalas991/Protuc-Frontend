@@ -2,15 +2,17 @@
   background: linear-gradient(to bottom, rgb(23, 80, 157), rgb(5, 178, 234));
   width: 100%;
   aspect-ratio: 11/1;
+  font-size: 1.2vw;
 }
 #titulo-publicidad {
   color: #fff;
-  /* font-size: 150%; */
+  font-size: 150%;
 }
 #subtitulo-publicidad {
   color: #fff;
+  font-size: 100%;
 }
-@media (max-width: 434px) {
+/* @media (max-width: 434px) {
   #titulo-publicidad {
     font-size: 50%;
   }
@@ -47,4 +49,4 @@
   #subtitulo-publicidad {
     font-size: 120%;
   }
-}
+} */
