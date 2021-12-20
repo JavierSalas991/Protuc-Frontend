@@ -43,7 +43,7 @@ const Carrousel = ({ infoCarousel }) => {
     //   </Carousel.Item>
     // </Carousel>
 
-    <>
+    <div style={{'font-size': '1.2vw'}}>
       <div
         id="carouselExampleIndicators"
         className="carousel slide arial-rounded"
@@ -104,8 +104,11 @@ const Carrousel = ({ infoCarousel }) => {
                   <div className="row h-100">
                     <div className="col-4 "></div>
                     <div className="col-6 d-flex flex-column justify-content-end align-items-start text-start">
-                      <h2 className=" text-light">{item.titulo}</h2>
-                      <p>{item.subtitulo}</p>
+                      <h2 
+                      className=" text-light"
+                      style={{'font-size': '200%'}}
+                      >{item.titulo}</h2>
+                      <p style={{'font-size': '100%'}}>{item.subtitulo}</p>
                       <button
                         className="boton-celeste-slider px-2 pt-1 pb-1"
                         style={{ "white-space": "nowrap" }}
@@ -195,7 +198,7 @@ const Carrousel = ({ infoCarousel }) => {
           <span className="visually-hidden">Next</span>
         </button>
       </div> */}
-    </>
+    </div>
   );
 };
 

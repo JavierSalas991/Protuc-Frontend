@@ -7,10 +7,12 @@ const Novedades = () => {
 
   let categorias = ["Cursos", "Convocatorias", "FAQs"];
   return (
-    <div id="background-azul-oscuro" className="pt-3 arial-rounded">
+    <div 
+    className="pt-3 arial-rounded background-azul-oscuro"
+    style={{'font-size' : '3vw'}}
+    >
       <div
         className="d-flex justify-content-center"
-        style={{ "font-size": "41px" }}
       >
         <p className="text-light">Novedades</p>
       </div>
@@ -24,7 +26,7 @@ const Novedades = () => {
               <img src={imagenPrueba} className="w-100 h-100"></img>
             </div>
           </div>
-          <div style={{ width: "85%" }}>
+          <div style={{ width: "85%" , 'font-size' : '75%'}}>
             <div className="cartel-nuevo">
               <p className="texto-nuevo colorsito-amarillo">NUEVO</p>
             </div>
@@ -71,9 +73,14 @@ const Novedades = () => {
               })}
             </div>
             <div>
-              <p>
+              <p
+              style={{'font-size' : '50%'}}
+              >
                 {" "}
-                <strong className="titulo-seccion-novedades">
+                <strong style={{
+                  'color': '#fff',
+                  'font-size' : '150%'
+                  }}>
                   Recursos Humanos{" "}
                 </strong>
                 <span className="colorsito-amarillo">
@@ -82,12 +89,21 @@ const Novedades = () => {
                   {iconos.estrella}
                 </span>
               </p>
-              <p className="subtitulo-seccion-novedades aventa">
+              <p
+               className="aventa"
+               style={{
+                'color': '#fff',
+                'font-size' : '60%'
+                }}
+               >
                 Capacitate para ingresar a la industria de software factory
               </p>
             </div>
             <div className="d-flex justify-content-end">
-              <button className="boton-celeste-transparente px-4 pt-1 pb-2">
+              <button 
+              className="boton-celeste-transparente px-4 pt-1 pb-2"
+              style={{'font-size' : '50%'}}
+              >
                 Conoce mas
               </button>
             </div>

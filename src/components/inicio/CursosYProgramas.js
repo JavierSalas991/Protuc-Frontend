@@ -18,8 +18,11 @@ const CursosYProgramas = () => {
   ];
 
   return (
-    <div id="background-azul-oscuro" className="pt-3 pb-2 arial-rounded">
-      <div style={{ "font-size": "34px" }}>
+    <div 
+    className="pt-3 pb-2 arial-rounded background-azul-oscuro"
+    style={{'font-size' : '2.5vw'}}
+    >
+      <div style={{ "font-size": "100%" }}>
         <div className="d-flex justify-content-center">
           <p className="text-light">Conoce nuestros cursos y programas</p>
         </div>
@@ -124,9 +127,8 @@ const CursosYProgramas = () => {
       </div> */}
 
       <div className="">
-        <Carousel>
+        <Carousel indicators={false}>
           <Carousel.Item interval={1000}>
-    
               <Row justify="space-around">
                 <Col span={5}>
                   <Card
@@ -135,10 +137,10 @@ const CursosYProgramas = () => {
                   >
                     <Card.Img variant="top" src={`${imagenPrueba}`} />
                     <Card.Body className="pb-0  d-flex flex-column justify-content-between">
-                      <Card.Title className="text-light">
+                      <Card.Title className="text-light" style={{'font-size' : '60%'}}>
                         Reparacion de celulares
                       </Card.Title>
-                      <div className=" m-0 p-0">
+                      <div className=" m-0 p-0"  style={{'font-size' : '50%'}}>
                         <div className="d-flex justify-content-between align-items-end mt-4">
                           <p className="colorsito-amarillo cursor-pointer">
                             Inscribite
@@ -158,11 +160,11 @@ const CursosYProgramas = () => {
                   >
                     <Card.Img variant="top" src={`${imagenPrueba}`} />
                     <Card.Body className="pb-0  d-flex flex-column justify-content-between">
-                      <Card.Title className="text-light">
+                      <Card.Title className="text-light"  style={{'font-size' : '60%'}}>
                         Reparacion de celulares ejeplo titulo muy largho y este
                         es aun mas largo a ver que onda
                       </Card.Title>
-                      <div className=" m-0 p-0">
+                      <div className=" m-0 p-0"  style={{'font-size' : '50%'}}>
                         <div className="d-flex justify-content-between align-items-end mt-4">
                           <p className="colorsito-amarillo cursor-pointer">
                             Inscribite
@@ -182,10 +184,10 @@ const CursosYProgramas = () => {
                   >
                     <Card.Img variant="top" src={`${imagenPrueba}`} />
                     <Card.Body className="pb-0  d-flex flex-column justify-content-between">
-                      <Card.Title className="text-light">
+                      <Card.Title className="text-light"  style={{'font-size' : '60%'}}>
                         Reparacion de celulares
                       </Card.Title>
-                      <div className=" m-0 p-0">
+                      <div className=" m-0 p-0" style={{'font-size' : '50%'}}>
                         <div className="d-flex justify-content-between align-items-end mt-4">
                           <p className="colorsito-amarillo cursor-pointer">
                             Inscribite
@@ -205,10 +207,10 @@ const CursosYProgramas = () => {
                   >
                     <Card.Img variant="top" src={`${imagenPrueba}`} />
                     <Card.Body className="pb-0  d-flex flex-column justify-content-between">
-                      <Card.Title className="text-light">
+                      <Card.Title className="text-light"  style={{'font-size' : '60%'}}>
                         Reparacion de celulares ejeplo titulo muy largho
                       </Card.Title>
-                      <div className=" m-0 p-0">
+                      <div className=" m-0 p-0" style={{'font-size' : '50%'}}>
                         <div className="d-flex justify-content-between align-items-end mt-4">
                           <p className="colorsito-amarillo cursor-pointer">
                             Inscribite
