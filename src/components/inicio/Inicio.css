@@ -59,8 +59,6 @@
   color: rgb(252, 192, 8);
 }
 .cuadro-blanco {
-  /* margin-top: 10%;
-  margin-bottom: 10%; */
   width: 85%;
   aspect-ratio: 2/1;
   background-color: #fff;
@@ -113,7 +111,7 @@
 .img-docente {
   border: #fff 6px solid;
   border-radius: 1000px;
-  width: 33vh;
+  width: 17vw;
   aspect-ratio: 1/1;
 }
 .card-docente {
@@ -121,6 +119,7 @@
   border-radius: 10px;
   width: 100%;
   aspect-ratio: 5/2;
+  font-size: 1.5vw;
 }
 .aspect-2-1 {
   aspect-ratio: 10/7;
@@ -133,6 +132,11 @@
 }
 .boton-carousel-next{
   background-color: red;
+}
+
+.carouselStaff{
+  position: absolute;
+  width: 100%;
 }
 
 /* @media (max-width: 434px) {
