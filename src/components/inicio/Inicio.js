@@ -7,6 +7,8 @@ import Novedades from "./Novedades";
 import NuestroStaff from "./NuestroStaff";
 import Axios from "axios";
 import NavHamburguesa from "./NavHamburguesa";
+import Footer from "../common/Footer";
+
 
 const Inicio = () => {
   const [infoGeneral, setInfoGeneral] = useState(null);
@@ -34,6 +36,7 @@ const Inicio = () => {
           <CursosYProgramas />
           <Novedades />
           <NuestroStaff docentes={infoGeneral.docentes} />
+          <Footer></Footer>
         </>
       ) : null}
     </Fragment>

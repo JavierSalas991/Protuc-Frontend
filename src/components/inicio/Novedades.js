@@ -101,7 +101,9 @@ const Novedades = () => {
             </div>
             <div className="d-flex justify-content-end">
               <button 
-              className="boton-celeste-transparente px-4 pt-1 pb-2"
+              className="boton-celeste-transparente px-4 pt-1 pb-1
+              4
+              J"
               style={{'font-size' : '50%'}}
               >
                 Conoce mas

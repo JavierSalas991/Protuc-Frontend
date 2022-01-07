@@ -38,6 +38,18 @@
 .boton-celeste:hover {
   background-color: rgb(10, 226, 230);
 }
+.boton-celeste-cuadrado {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(4, 218, 220);
+  /* font-size: 20px; */
+  font-family: arial-rounded;
+  /* font-size: 120%; */
+}
+.boton-celeste-cuadrado:hover {
+  background-color: rgb(10, 226, 230);
+}
 
 .boton-celeste-slider {
   color: #fff;
@@ -63,6 +75,9 @@
 }
 .cursor-pointer {
   cursor: pointer;
+}
+#seccion-footer{
+  aspect-ratio: 4/1;
 }
 
 /* @media (max-width: 434px) {
