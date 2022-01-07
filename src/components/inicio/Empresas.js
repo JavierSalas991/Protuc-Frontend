@@ -11,10 +11,10 @@ const Empresas = () => {
   let imagenesEmpresas = [
     empresa3,
     empresa2,
-    empresa1,
+    empresa4,
     empresa5,
     empresa4,
-    empresa1,
+    empresa3,
   ];
 
   return (
@@ -31,7 +31,7 @@ const Empresas = () => {
           </div>
          
          {/* dispositivos grandes */}
-          <div className="seccion-carousel-empresas d-none d-md-block">
+          <div className="d-none d-md-block">
             <Carousel indicators={false}>
               {imagenesEmpresas.map((imagen, key) => {
                 if (key % 5 === 0) {
@@ -96,12 +96,12 @@ const Empresas = () => {
           </div>
 
           {/* dispositivos chicos */}
-          <div className="seccion-carousel-empresas d-inline d-md-none">
+          <div className="d-block d-md-none">
             <Carousel indicators={false}>
               {imagenesEmpresas.map((imagen, key) => {
                 if (key % 3 === 0) {
                   return (
-                    <Carousel.Item className="w-100 text-center item-carousel-empresas">
+                    <Carousel.Item className="w-100 text-center item-carousel-empresas-mobile">
                       <div className="h-100 row">
                         <div className="h-100 d-flex justify-content-center">
                           {imagenesEmpresas[key] ? (

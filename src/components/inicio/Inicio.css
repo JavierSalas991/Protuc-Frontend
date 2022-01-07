@@ -30,7 +30,7 @@
 #clase-empresas {
   background-color: rgb(0, 12, 54);
   font-size: 1.7vw;
-  min-height: 180px;
+  /* min-height: 180px; */
   font-family: arial-rounded;
 }
 #conoce-mas {
@@ -124,11 +124,12 @@
 .aspect-2-1 {
   aspect-ratio: 10/7;
 }
-.item-carousel-empresas{
-  aspect-ratio: 12/1;
-}
+
 .item-carousel-empresas{
   aspect-ratio: 9/1;
+}
+.item-carousel-empresas-mobile{
+  aspect-ratio: 6/1;
 }
 .boton-carousel-next{
   background-color: red;
