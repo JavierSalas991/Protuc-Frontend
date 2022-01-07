@@ -7,7 +7,6 @@ import fondoVerde from "../../img/fondoVerde.png";
 const NuestroStaff = ({ docentes }) => {
   return (
     <div>
-      
       <div className='carouselStaff'>
         <Carousel indicators={false}>
           {docentes.map((docente, key) => {
