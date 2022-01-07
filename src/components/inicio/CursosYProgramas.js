@@ -31,7 +31,7 @@ const CursosYProgramas = () => {
       {/* dispositivos grandes */}
       <div className="d-none d-md-block">
         <Carousel indicators={false}>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={5000}>
             <Row justify="space-around">
               <Col span={5}>
                 <Card
@@ -146,7 +146,7 @@ const CursosYProgramas = () => {
       {/* dispositivos chicos */}
       <div className="d-block d-md-none">
       <Carousel indicators={false}>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={5000}>
             <Row justify="space-around">
               <Col span={10}>
                 <Card
@@ -157,11 +157,11 @@ const CursosYProgramas = () => {
                   <Card.Body className="pb-0  d-flex flex-column justify-content-between">
                     <Card.Title
                       className="text-light"
-                      style={{ "font-size": "60%" }}
+                      style={{ "font-size": "100%" }}
                     >
                       Reparacion de celulares
                     </Card.Title>
-                    <div className=" m-0 p-0" style={{ "font-size": "50%" }}>
+                    <div className=" m-0 p-0" style={{ "font-size": "90%" }}>
                       <div className="d-flex justify-content-between align-items-end mt-4">
                         <p className="colorsito-amarillo cursor-pointer">
                           Inscribite
@@ -183,12 +183,12 @@ const CursosYProgramas = () => {
                   <Card.Body className="pb-0  d-flex flex-column justify-content-between">
                     <Card.Title
                       className="text-light"
-                      style={{ "font-size": "60%" }}
+                      style={{ "font-size": "100%" }}
                     >
                       Reparacion de celulares ejeplo titulo muy largho y este es
                       aun mas largo a ver que onda
                     </Card.Title>
-                    <div className=" m-0 p-0" style={{ "font-size": "50%" }}>
+                    <div className=" m-0 p-0" style={{ "font-size": "90%" }}>
                       <div className="d-flex justify-content-between align-items-end mt-4">
                         <p className="colorsito-amarillo cursor-pointer">
                           Inscribite
@@ -204,7 +204,7 @@ const CursosYProgramas = () => {
     
             </Row>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={5000}>
             <Row justify="space-around">
               <Col span={10}>
                 <Card
@@ -215,11 +215,11 @@ const CursosYProgramas = () => {
                   <Card.Body className="pb-0  d-flex flex-column justify-content-between">
                     <Card.Title
                       className="text-light"
-                      style={{ "font-size": "60%" }}
+                      style={{ "font-size": "100%" }}
                     >
                       Reparacion de celulares
                     </Card.Title>
-                    <div className=" m-0 p-0" style={{ "font-size": "50%" }}>
+                    <div className=" m-0 p-0" style={{ "font-size": "90%" }}>
                       <div className="d-flex justify-content-between align-items-end mt-4">
                         <p className="colorsito-amarillo cursor-pointer">
                           Inscribite
@@ -241,11 +241,11 @@ const CursosYProgramas = () => {
                   <Card.Body className="pb-0  d-flex flex-column justify-content-between">
                     <Card.Title
                       className="text-light"
-                      style={{ "font-size": "60%" }}
+                      style={{ "font-size": "100%" }}
                     >
                       Reparacion de celulares ejeplo titulo muy largho
                     </Card.Title>
-                    <div className=" m-0 p-0" style={{ "font-size": "50%" }}>
+                    <div className=" m-0 p-0" style={{ "font-size": "90%" }}>
                       <div className="d-flex justify-content-between align-items-end mt-4">
                         <p className="colorsito-amarillo cursor-pointer">
                           Inscribite

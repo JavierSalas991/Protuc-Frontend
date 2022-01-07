@@ -49,7 +49,6 @@
 .categoria {
   color: #fff;
   font-size: 60%;
-
 }
 
 .colorsito-celeste {
@@ -97,7 +96,7 @@
   padding: 0;
 }
 .lineaCeleste {
-  height: 40px;
+  height: 3vw;
   border-left: 1px solid rgb(5, 217, 218);
 }
 
