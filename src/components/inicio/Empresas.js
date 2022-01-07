@@ -13,8 +13,7 @@ const Empresas = () => {
     empresa2,
     empresa4,
     empresa5,
-    empresa4,
-    empresa3,
+    empresa4
   ];
 
   return (
