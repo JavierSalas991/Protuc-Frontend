@@ -52,22 +52,23 @@
 }
 
 .boton-celeste-slider {
-  color: #fff;
-  border: none;
-  border-radius: 1000px;
-  background-color: rgb(4, 218, 220);
+  color: #fff!important;
+  border: none!important;
+  border-radius: 1000px!important;
+  background-color: rgb(4, 218, 220)!important;
   /* font-size: 20px; */
-  font-family: arial-rounded;
+  font-family: arial-rounded!important;
+  
 }
 .boton-celeste-slider:hover {
-  background-color: rgb(10, 226, 230);
+  background-color: rgb(10, 226, 250)!important;
 }
 .boton-celeste-transparente {
-  color: rgb(4, 218, 220);
-  border: 1px solid rgb(4, 218, 220);
-  border-radius: 1000px;
-  background-color: transparent;
-  font-family: arial-rounded;
+  color: rgb(4, 218, 220)!important;
+  border: 1px solid rgb(4, 218, 220)!important;
+  border-radius: 1000px!important;
+  background-color: transparent!important;
+  font-family: arial-rounded!important;
 }
 .boton-celeste-transparente:hover {
   color: #fff;
@@ -120,3 +121,113 @@
     font-size: 18px;
   }
 } */
+
+.nuevo-carousel-body{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.nuevo-carousel-titulo{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: arial-rounded;
+  font-size: 210%;
+}
+
+.nuevo-carousel-subtitulo{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: arial-rounded;
+  font-size: 120%;
+}
+
+.nuevo-carousel-btn{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-docentes{
+  background-image: url("/src/img/slider_down01.jpg");
+  background-size: 100%;
+}
+
+.bg-cursos{
+  background-image: url("/src/img/fondoCeleste.png");
+  background-size: 100%;
+}
+
+.docentes-recuadro{
+  background-color: rgba(247, 241, 241, 0.911);
+}
+
+.docentes-alias{
+  font-size: large;
+  font-weight: bolder;
+}
+
+.docentes-titulo{
+  font-size: medium;
+}
+
+.carousel-docentes .slide {
+    min-width: 33%!important;
+}
+
+.carousel-cursos .slide {
+  min-width: 25%!important;
+}
+
+.cursos-body{
+  background-color: rgb(30, 36, 73)!important;
+}
+
+
+.cursos-footer{
+  font-size: 13px;
+}
+
+.cursos-btn-inscribir{
+
+}
+
+.cursos-btn-inscribir:hover{
+  cursor: pointer;
+  color: rgb(182, 141, 17);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* [class*="nuevo-carousel-"] {
+    display: none;
+  } */
+  .nuevo-carousel-subtitulo{
+    display: none;
+  }
+  .nuevo-carousel-titulo{
+    font-size:120%;
+  }
+  .nuevo-carousel-btn{
+    display: none!important;
+  }
+  .carousel-docentes .slide {
+    min-width: 100%!important;
+  }
+
+  .carousel-cursos .slide {
+    min-width: 100%!important;
+  }
+
+.bg-docentes{
+    background-image: url("/src/img/slider_down01.jpg");
+    background-size: 300%;
+  }
+  
+  
+}
