@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useState, Fragment } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Button } from "react-bootstrap";
@@ -14,14 +14,12 @@ const NuevoCurso = ({
   showArrows,
   showStatus,
   stopOnHover,
-}) => 
-{
+}) => {
   const [cantImagenes, setCantImagenes] = useState(4);
 
-
   const handleInscripcion = () => {
-      console.log('desde inscribirse')
-  }
+    console.log("desde inscribirse");
+  };
 
   useEffect(() => {
     const adaptarPantalla = () => {
@@ -47,10 +45,10 @@ const NuevoCurso = ({
   return (
     <div className="pt-3 pb-2 arial-rounded background-azul-oscuro">
       <div style={{ "font-size": "100%" }}>
-        <div
-          className="d-flex justify-content-center"
-        >
-          <p className="text-light my-4 cursos-titulo">Conoce nuestros cursos y programas</p>
+        <div className="d-flex justify-content-center">
+          <p className="text-light my-4 cursos-titulo">
+            Conoce nuestros cursos y programas
+          </p>
         </div>
       </div>
       <Carousel
@@ -69,25 +67,39 @@ const NuevoCurso = ({
       >
         {info.map((item, key) => {
           return (
-            <div key={key} className="">
+            <Fragment key={key} className="">
               {item.activo ? (
-                <div className="mx-3 mb-4 mt-2 rounded cursos-body">
+                <div className="mx-3 mb-4 mt-2 rounded cursos-body ">
                   <div className="cursos-img-container">
-                  <img
-                    className="w-100"
-                    src={`http://flydevs.ddns.net/media/${item.imagen}`}
-                  />
+                    <img
+                      className="w-100"
+                      src={`http://flydevs.ddns.net/media/${item.imagen}`}
+                    />
                   </div>
-                  <div className="rounded">
-                    <p className="text-light mt-3 borderp-2 cursos-nombre">{item.nombre}</p>
-                    <div className="cursos-footer-container text-light d-flex justify-content-between align-items-baseline px-3">
-                      <div onClick={()=>{handleInscripcion()}} className="border cursos-footer colorsito-amarillo cursos-btn-inscribir">Inscribite</div>
-                      <p className="colorsito-celeste cursos-footer border">+Nivel {(item.nivel).charAt(0).toUpperCase() + (item.nivel).slice(1).toLowerCase()}</p>
+                  <div className="">
+                    <p className="text-light p-2 cursos-nombre">
+                      {item.nombre}
+                    </p>
+                    <p className="cursos-descripcion px-2 text-light">{item.descripcion}</p>
+                  </div>
+                  <div className="p-2 cursos-footer-container">
+                     <div
+                      onClick={() => {
+                        handleInscripcion();
+                      }}
+                      className="colorsito-amarillo cursos-btn-inscribir cursos-footer"
+                    >
+                      Inscribite
                     </div>
+                    <p className="colorsito-celeste cursos-footer">
+                      +Nivel{" "}
+                      {item.nivel.charAt(0).toUpperCase() +
+                        item.nivel.slice(1).toLowerCase()}
+                    </p>
                   </div>
                 </div>
               ) : null}
-            </div>
+            </Fragment>
           );
         })}
       </Carousel>

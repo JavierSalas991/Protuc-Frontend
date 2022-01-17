@@ -187,6 +187,9 @@
 .cursos-body{
   background-color: rgb(30, 36, 73)!important;
   height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cursos-img-container{
@@ -198,15 +201,27 @@
 
 .cursos-footer{
   font-size: 15px;
+  
+  margin-bottom: 0px;
 }
 
 .cursos-footer-container{
-  position: sticky;
-  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  
 }
 
 .cursos-nombre{
   font-size: 22px;
+}
+
+.cursos-descripcion{
+  font-size: 12px;
+  word-wrap: break-word;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
 }
 
 .cursos-btn-inscribir{
@@ -228,6 +243,32 @@
 .cursos-titulo{
   font-size: 2.5vw!important;
 }
+
+
+.carousel-sponsors .slide {
+  min-width: 20%!important;
+}
+
+.sponsors-img{
+  width: 10vw!important;
+  aspect-ratio: 1/1;
+}
+
+.sponsors-container{
+  background-color: rgb(0, 12, 54);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sponsors-titulo{
+  font-size: 1.7vw;
+  /* min-height: 180px; */
+  font-family: arial-rounded;
+}
+
+
+
 
 
 
@@ -276,6 +317,9 @@
     width: 50vw!important;
     aspect-ratio: 1/1;
 }
-  
+.carousel-sponsors .slide {
+  min-width: 50%!important;
+}
+ 
   
 }

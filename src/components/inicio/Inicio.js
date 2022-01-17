@@ -12,10 +12,12 @@ import NuevoCarrousel from "./NuevoCarrousel";
 import NavbarProtuc from "./NavbarProtuc";
 import NuevoStaff from "./NuevoStaff";
 import NuevoCurso from "./NuevoCurso";
+import NuevaEmpresas from "./NuevaEmpresas";
 
 const Inicio = () => {
   const [infoGeneral, setInfoGeneral] = useState(null);
   const [cursos, setCursos] = useState(null);
+  const [sponsors, setSponsors] = useState(null);
 
   const getHome = async () => {
     const res = await Axios.get("http://flydevs.ddns.net/protucapi/home/");
@@ -27,11 +29,18 @@ const Inicio = () => {
     return res;
   }
 
+  const getSponsors = async () => {
+    const res = await Axios.get("http://flydevs.ddns.net/protucapi/sponsors/");
+    return res;
+  }
+
   useEffect(async () => {
     let res = await getHome();
     let cursos_ = await getCursos();
+    let sponsors_ = await getSponsors();
     setInfoGeneral(res.data);
     setCursos(cursos_.data);
+    setSponsors(sponsors_.data);
     
     
   }, []);
@@ -48,6 +57,12 @@ const Inicio = () => {
           <NavbarProtuc/>
           
           <NuevoCarrousel info={infoGeneral.carrousel} imagesAtOnce={3} showArrows={true} showIndicators={true} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={false} infiniteLoop={true} stopOnHover={false}/>
+          {sponsors !== null ? (
+              <NuevaEmpresas info={sponsors} showArrows={true} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={false} />
+                
+          ) : (
+            null
+          )} 
           {/* <Empresas /> */}
           {/* <CursosYProgramas /> */}
           {cursos !== null ? (
