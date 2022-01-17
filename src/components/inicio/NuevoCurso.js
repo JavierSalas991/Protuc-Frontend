@@ -49,9 +49,8 @@ const NuevoCurso = ({
       <div style={{ "font-size": "100%" }}>
         <div
           className="d-flex justify-content-center"
-          style={{ "font-size": "2.5vw" }}
         >
-          <p className="text-light my-4">Conoce nuestros cursos y programas</p>
+          <p className="text-light my-4 cursos-titulo">Conoce nuestros cursos y programas</p>
         </div>
       </div>
       <Carousel
@@ -73,15 +72,17 @@ const NuevoCurso = ({
             <div key={key} className="">
               {item.activo ? (
                 <div className="mx-3 mb-4 mt-2 rounded cursos-body">
+                  <div className="cursos-img-container">
                   <img
                     className="w-100"
                     src={`http://flydevs.ddns.net/media/${item.imagen}`}
                   />
+                  </div>
                   <div className="rounded">
-                    <p className="text-light mt-3">{item.nombre}</p>
-                    <div className="text-light d-flex justify-content-between align-items-baseline px-3">
-                      <div onClick={()=>{handleInscripcion()}} className="colorsito-amarillo cursos-btn-inscribir">Inscribite</div>
-                      <p className="colorsito-celeste">+Nivel {(item.nivel).charAt(0).toUpperCase() + (item.nivel).slice(1).toLowerCase()}</p>
+                    <p className="text-light mt-3 borderp-2 cursos-nombre">{item.nombre}</p>
+                    <div className="cursos-footer-container text-light d-flex justify-content-between align-items-baseline px-3">
+                      <div onClick={()=>{handleInscripcion()}} className="border cursos-footer colorsito-amarillo cursos-btn-inscribir">Inscribite</div>
+                      <p className="colorsito-celeste cursos-footer border">+Nivel {(item.nivel).charAt(0).toUpperCase() + (item.nivel).slice(1).toLowerCase()}</p>
                     </div>
                   </div>
                 </div>

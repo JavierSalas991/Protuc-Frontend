@@ -5,7 +5,7 @@ import { Row, Col } from "antd";
 const PublicidadHeader = ({ banner_header }) => {
   console.log(banner_header);
   return (
-    <div id="fondo" className="text-light">
+    <div id="fondo" className="text-light alto-banner">
       <div className="d-none d-md-block h-100">
         <div className="row h-100 container-fluid">
           <div className="col-3 h-100  d-flex justify-content-center">
@@ -13,7 +13,7 @@ const PublicidadHeader = ({ banner_header }) => {
               <img
                 src={`http://flydevs.ddns.net/media/${banner_header.img_izq}`}
                 alt={`${banner_header.img_izq_nombre}`}
-                className="h-100"
+                className=""
               ></img>
          
           </div>

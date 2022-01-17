@@ -62,11 +62,11 @@ const NuevoStaff = ({
       >
         {info.map((item, key) => {
           return (
-            <div key={key} className="">
+            <div key={key} className="my-4">
               {item.activo ? (
                 <>
                   <img
-                    className="w-50 mt-4 rounded-circle"
+                    className="nueva-img-docentes rounded-circle"
                     src={`http://flydevs.ddns.net/media/${item.foto_personal}`}
                   />
                   <div className="rounded d-flex justify-content-center ">

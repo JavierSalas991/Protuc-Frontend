@@ -55,7 +55,7 @@ const Inicio = () => {
           ):(
             null
           )}
-          {/* <Novedades /> */}
+          <Novedades />
           {/* <NuestroStaff docentes={infoGeneral.docentes} /> */}
           <NuevoStaff info={infoGeneral.docentes} showArrows={false} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={false}/> 
           <Footer></Footer>

@@ -33,7 +33,7 @@ const NuevoCarrousel = ({
         {info.map((item, key) => {
           return (
             <div key={key} className="nuevo-carousel-body">
-              <img src={`http://flydevs.ddns.net/media/${item.img}`} />
+              <img className="nuevo-carousel-ancho-img" src={`http://flydevs.ddns.net/media/${item.img}`} />
               {item.titulo !== "" ? (
                 <p className="nuevo-carousel-titulo">{item.titulo}</p>
               ) : null}
