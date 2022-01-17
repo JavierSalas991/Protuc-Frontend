@@ -58,7 +58,7 @@ const Inicio = () => {
           
           <NuevoCarrousel info={infoGeneral.carrousel} imagesAtOnce={3} showArrows={true} showIndicators={true} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={false} infiniteLoop={true} stopOnHover={false}/>
           {sponsors !== null ? (
-              <NuevaEmpresas info={sponsors} showArrows={true} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={false} />
+              <NuevaEmpresas info={sponsors} showArrows={false} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={false} />
                 
           ) : (
             null

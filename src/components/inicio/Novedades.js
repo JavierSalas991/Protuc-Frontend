@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import imagenPrueba from "../../img/cursos/curso1.png";
+import imagenPrueba from "../../img/novedades.jpeg";
 import { iconos } from "../helpers/iconos";
 
 const Novedades = () => {
@@ -12,7 +12,8 @@ const Novedades = () => {
       <div
         className="d-none d-md-block pt-3 arial-rounded background-azul-oscuro"
         style={{ "font-size": "3vw" }}
-      >
+        >
+        <hr className="text-light"></hr>
         <div className="d-flex justify-content-center">
           <p className="text-light">Novedades</p>
         </div>
