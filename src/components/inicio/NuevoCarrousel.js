@@ -43,7 +43,7 @@ const NuevoCarrousel = ({
               {item.texto_boton !== "" ? (
                 <Button
                   variant={"info"}
-                  className="rounded-pill text-light nuevo-carousel-btn"
+                  className="rounded-pill text-light nuevo-carousel-btn py-2"
                 >
                   {item.texto_boton}
                 </Button>

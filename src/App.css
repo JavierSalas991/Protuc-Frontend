@@ -320,6 +320,21 @@
 .carousel-sponsors .slide {
   min-width: 33%!important;
 }
- 
+
+.sponsors-img{
+  width: 15vw!important;
+  aspect-ratio: 1/1;
+}
+
+.sponsors-titulo{
+  font-size: 3vw;
+  /* min-height: 180px; */
+  font-family: arial-rounded;
+}
+
+.links-footer{
+  display: none;
+}
+
   
 }

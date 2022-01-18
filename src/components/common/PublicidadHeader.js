@@ -1,6 +1,7 @@
 import React from "react";
 import "./PublicidadHeader.css";
 import { Row, Col } from "antd";
+import { Button } from 'react-bootstrap';
 
 const PublicidadHeader = ({ banner_header }) => {
   console.log(banner_header);
@@ -32,12 +33,19 @@ const PublicidadHeader = ({ banner_header }) => {
           </div>
           <div className="col-2 h-100">
             <div className="d-flex h-100 justify-content-center align-items-center">
-              <button
-                className="boton-celeste px-2 pt-1 pb-1"
+              {/* <button
+                className="boton-celeste p-1"
                 style={{ "white-space": "nowrap" }}
               >
                 {banner_header.texto_boton}
-              </button>
+              </button> */}
+
+                <Button
+                  variant={"info"}
+                  className="boton-celeste rounded-pill text-light py-2"
+                >
+                  {banner_header.texto_boton}
+                </Button>
             </div>
           </div>
           <div className="col-sm-1 col-md-2 h-100 d-flex justify-content-center align-items-center">

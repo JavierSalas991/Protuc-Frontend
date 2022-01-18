@@ -23,7 +23,7 @@ const NuevaEmpresas = ({
   useEffect(() => {
     const adaptarPantalla = () => {
       if (window.screen.width <= 786){
-        setCantImagenes(3)
+        setCantImagenes(2)
       } else {
         setCantImagenes(5)
       }
