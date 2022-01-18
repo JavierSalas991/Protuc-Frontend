@@ -64,6 +64,8 @@ const NuevoCurso = ({
         showArrows={showArrows}
         showStatus={showStatus}
         stopOnHover={stopOnHover}
+        interval={3500}
+        transitionTime={2000}
       >
         {info.map((item, key) => {
           return (
