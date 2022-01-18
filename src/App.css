@@ -218,7 +218,7 @@
 }
 
 .cursos-descripcion{
-  font-size: 12px;
+  font-size: 1vw!important;
   word-wrap: break-word;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
@@ -336,5 +336,8 @@
   display: none;
 }
 
+.cursos-descripcion{
+  font-size: 3.8vw!important;
+}
   
 }

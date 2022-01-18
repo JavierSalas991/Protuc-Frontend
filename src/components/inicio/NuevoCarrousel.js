@@ -21,7 +21,7 @@ const NuevoCarrousel = ({
   return (
     <>
       <Carousel
-        transitionTime={2000}
+        transitionTime={1300}
         interval={5000}
         centerSlidePercentage={100 / imagesAtOnce}
         centerMode={centerMode}
