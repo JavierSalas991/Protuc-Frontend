@@ -59,6 +59,7 @@ const NuevoStaff = ({
         showArrows={showArrows}
         showStatus={showStatus}
         stopOnHover={stopOnHover}
+        transitionTime={1000}
       >
         {info.map((item, key) => {
           return (

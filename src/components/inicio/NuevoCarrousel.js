@@ -15,10 +15,14 @@ const NuevoCarrousel = ({
   showStatus,
   stopOnHover,
   imagesAtOnce,
+  animationHandler,
+  swipeable,
 }) => {
   return (
     <>
       <Carousel
+        transitionTime={2000}
+        interval={5000}
         centerSlidePercentage={100 / imagesAtOnce}
         centerMode={centerMode}
         autoFocus={autoFocus}
@@ -29,6 +33,8 @@ const NuevoCarrousel = ({
         showArrows={showArrows}
         showStatus={showStatus}
         stopOnHover={stopOnHover}
+        animationHandler={animationHandler}
+        swipeable={swipeable}
       >
         {info.map((item, key) => {
           return (
