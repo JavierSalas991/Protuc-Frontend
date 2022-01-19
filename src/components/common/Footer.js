@@ -1,17 +1,17 @@
 import React from "react";
-import logo from "../../img/logos/ProTuc_Identidad_Logotipov2.2_png.png";
+import logo from "../../img/logos/Protuc_Identidad01.png";
 import { Form, Button } from "react-bootstrap";
+import { iconos } from "../helpers/iconos";
 
 const Footer = () => {
   return (
     <>
       {/* dispositivos grandes */}
-      <div className="w-auto background-azul-oscuro d-none d-md-block">
-        <div
-          className=" w-100 row arial-rounded"
-          style={{ "font-size": "2vw" }}
-          id="seccion-footer"
-        >
+      <div
+        className="w-auto background-azul-oscuro d-none d-md-block"
+        style={{ "font-size": "2vw" }}
+      >
+        <div className=" w-100 row arial-rounded" id="seccion-footer">
           <div className="col-3 d-flex justify-content-center align-items-center">
             <img src={logo} className="h-auto" style={{ width: "40%" }}></img>
           </div>
@@ -75,19 +75,42 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div
+          className=" w-100 row arial-rounded "
+          style={{ "font-size": "100%" }}
+        >
+          <div className="col-4 d-flex justify-content-center align-items-center">
+            <p style={{ "font-size": "80%" }} className="text-light">
+              Terminos y condiciones
+            </p>
+          </div>
+          <div className="col-4 d-flex justify-content-center align-items-center">
+            <p style={{ "font-size": "60%" }} className="text-light">
+              <span className="colorsito-celeste">Derechos reservados a</span>{" "}
+              Visión Global
+            </p>
+          </div>
+          <div className="col-4 d-flex justify-content-center text-light">
+            <p>
+              <span className="mx-2">{iconos.facebook}</span>
+              <span className="mx-2">{iconos.instagram}</span>
+              <span className="mx-2">{iconos.linkedin}</span>
+              <span className="mx-2">{iconos.youtube}</span>
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* dispositivos chicos */}
-      <div className="w-auto background-azul-oscuro d-block d-md-none py-3">
-        <div
-          className=" w-100 row arial-rounded"
-          style={{ "font-size": "3.5vw" }}
-          id="seccion-footer"
-        >
+      <div
+        className="w-auto background-azul-oscuro d-block d-md-none py-3"
+        style={{ "font-size": "3.5vw" }}
+      >
+        <div className=" w-100 row arial-rounded" id="seccion-footer">
           <div className="col-6 d-flex justify-content-center align-items-center">
             <img src={logo} className="h-auto" style={{ width: "40%" }}></img>
           </div>
-  
+
           <div className="col-6 d-flex justify-content-center align-items-center">
             <div className="w-75">
               <p style={{ "font-size": "80%" }} className="colorsito-celeste">
@@ -120,6 +143,30 @@ const Footer = () => {
                 </form>
               </div>
             </div>
+          </div>
+        </div>
+        <div
+          className=" w-100 row arial-rounded pt-3"
+          style={{ "font-size": "100%" }}
+        >
+          <div className="col-6 d-flex justify-content-center align-items-center">
+            <p style={{ "font-size": "80%" }} className="text-light">
+              Terminos y condiciones
+            </p>
+          </div>
+          <div className="col-6 d-flex justify-content-center align-items-center">
+            <p style={{ "font-size": "60%" }} className="text-light">
+              <span className="colorsito-celeste">Derechos reservados a</span>{" "}
+              Visión Global
+            </p>
+          </div>
+          <div className="col-12 d-flex justify-content-center text-light">
+            <p>
+              <span className="mx-2">{iconos.facebook}</span>
+              <span className="mx-2">{iconos.instagram}</span>
+              <span className="mx-2">{iconos.linkedin}</span>
+              <span className="mx-2">{iconos.youtube}</span>
+            </p>
           </div>
         </div>
       </div>
