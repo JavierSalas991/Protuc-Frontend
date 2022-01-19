@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../../img/logos/ProTuc_Identidad_Logotipov2.2_png.png";
 import { Form, Button } from "react-bootstrap";
+import { iconos } from "../helpers/iconos";
 
 const Footer = () => {
   return (
-    <div className='w-auto background-azul-oscuro '>
+    <div className="w-auto background-azul-oscuro ">
       <div
         className=" w-100 row arial-rounded"
         style={{ "font-size": "2vw" }}
@@ -71,6 +72,27 @@ const Footer = () => {
               </form>
             </div>
           </div>
+        </div>
+      </div>
+      <div className=" w-100 row arial-rounded " style={{ "font-size": "2vw" }}>
+        <div className="col-4 d-flex justify-content-center align-items-center">
+          <p style={{ "font-size": "80%" }} className="text-light">
+            Terminos y condiciones
+          </p>
+        </div>
+        <div className="col-4 d-flex justify-content-center align-items-center">
+          <p style={{ "font-size": "60%" }} className="text-light">
+            <span className="colorsito-celeste">Derechos reservados a</span>{" "}
+            Visión Global
+          </p>
+        </div>
+        <div className="col-4 d-flex justify-content-center text-light">
+          <p>
+            <span className='mx-2'>{iconos.facebook}</span>
+            <span className='mx-2'>{iconos.instagram}</span>
+            <span className='mx-2'>{iconos.linkedin}</span>
+            <span className='mx-2'>{iconos.youtube}</span>
+          </p>
         </div>
       </div>
     </div>
