@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Button } from "react-bootstrap";
 
+
 const NuevoCarrousel = ({
   info,
   centerMode,
@@ -20,6 +21,8 @@ const NuevoCarrousel = ({
 }) => {
   return (
     <>
+    <section className="d-flex">
+      <img className="protuc-logo" src={"http://flydevs.ddns.net/media/protuc-logo.png"}/>
       <Carousel
         transitionTime={1300}
         interval={5000}
@@ -48,8 +51,7 @@ const NuevoCarrousel = ({
               ) : null}
               {item.texto_boton !== "" ? (
                 <Button
-                  variant={"info"}
-                  className="rounded-pill text-light nuevo-carousel-btn py-2"
+                  className="boton-celeste rounded-pill nuevo-carousel-btn py-2"
                 >
                   {item.texto_boton}
                 </Button>
@@ -58,6 +60,7 @@ const NuevoCarrousel = ({
           );
         })}
       </Carousel>
+      </section>
     </>
   );
 };

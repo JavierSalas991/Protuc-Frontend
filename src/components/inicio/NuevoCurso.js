@@ -71,33 +71,35 @@ const NuevoCurso = ({
           return (
             <Fragment key={key} className="">
               {item.activo ? (
-                <div className="mx-3 mb-4 mt-2 rounded cursos-body ">
+                <div className="mx-3 mb-4 mt-2 rounded cursos-body text-start">
                   <div className="cursos-img-container">
                     <img
                       className="w-100"
                       src={`http://flydevs.ddns.net/media/${item.imagen}`}
                     />
                   </div>
-                  <div className="">
+                  <div className="cursos-body-texto">
                     <p className="text-light p-2 cursos-nombre">
                       {item.nombre}
                     </p>
-                    <p className="cursos-descripcion px-2 text-light">{item.descripcion}</p>
-                  </div>
-                  <div className="p-2 cursos-footer-container">
-                     <div
-                      onClick={() => {
-                        handleInscripcion();
-                      }}
-                      className="colorsito-amarillo cursos-btn-inscribir cursos-footer"
-                    >
-                      Inscribite
-                    </div>
-                    <p className="colorsito-celeste cursos-footer">
-                      +Nivel{" "}
-                      {item.nivel.charAt(0).toUpperCase() +
-                        item.nivel.slice(1).toLowerCase()}
+                    <p className="cursos-descripcion px-2 text-light">
+                      {item.descripcion}
                     </p>
+                    <div className="px-2 cursos-footer-container">
+                      <div
+                        onClick={() => {
+                          handleInscripcion();
+                        }}
+                        className="colorsito-amarillo cursos-btn-inscribir cursos-footer"
+                      >
+                        Inscribite
+                      </div>
+                      <p className="colorsito-celeste cursos-footer">
+                        +Nivel{" "}
+                        {item.nivel.charAt(0).toUpperCase() +
+                          item.nivel.slice(1).toLowerCase()}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ) : null}

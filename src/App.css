@@ -27,16 +27,17 @@
 }
 
 .boton-celeste {
-  color: #fff;
-  border: none;
-  border-radius: 1000px;
-  background-color: rgb(4, 218, 220);
+  color: #fff !important;
+  border: none !important;
+  border-radius: 1000px !important;
+  background-color: rgb(4, 218, 220) !important;
   /* font-size: 20px; */
-  font-family: arial-rounded;
-  font-size: 120%;
+  font-family: arial-rounded !important;
+  font-size: 120% !important;
 }
 .boton-celeste:hover {
-  background-color: rgb(10, 226, 230);
+  background-color: rgb(10, 226, 230) !important;
+  cursor: pointer !important;
 }
 .boton-celeste-cuadrado {
   color: #fff;
@@ -52,23 +53,22 @@
 }
 
 .boton-celeste-slider {
-  color: #fff!important;
-  border: none!important;
-  border-radius: 1000px!important;
-  background-color: rgb(4, 218, 220)!important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 1000px !important;
+  background-color: rgb(4, 218, 220) !important;
   /* font-size: 20px; */
-  font-family: arial-rounded!important;
-  
+  font-family: arial-rounded !important;
 }
 .boton-celeste-slider:hover {
-  background-color: rgb(10, 226, 250)!important;
+  background-color: rgb(10, 226, 250) !important;
 }
 .boton-celeste-transparente {
-  color: rgb(4, 218, 220)!important;
-  border: 1px solid rgb(4, 218, 220)!important;
-  border-radius: 1000px!important;
-  background-color: transparent!important;
-  font-family: arial-rounded!important;
+  color: rgb(4, 218, 220) !important;
+  border: 1px solid rgb(4, 218, 220) !important;
+  border-radius: 1000px !important;
+  background-color: transparent !important;
+  font-family: arial-rounded !important;
 }
 .boton-celeste-transparente:hover {
   color: #fff;
@@ -77,7 +77,7 @@
 .cursor-pointer {
   cursor: pointer;
 }
-#seccion-footer{
+#seccion-footer {
   aspect-ratio: 4/1;
 }
 
@@ -122,158 +122,161 @@
   }
 } */
 
-.nuevo-carousel-body{
+.nuevo-carousel-body {
   position: relative;
-  text-align: center;
+  text-align: left !important;
   color: white;
 }
 
-.nuevo-carousel-titulo{
+.protuc-logo {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  /* aspect-ratio: 1; */
+  width: 12% !important;
+}
+
+.nuevo-carousel-titulo {
   position: absolute;
   top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 55%;
+  transform: translate(-35%, -50%);
   font-family: arial-rounded;
   font-size: 210%;
 }
 
-.nuevo-carousel-subtitulo{
+.nuevo-carousel-subtitulo {
   position: absolute;
   top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 53%;
+  transform: translate(-35%, -50%);
   font-family: arial-rounded;
   font-size: 120%;
 }
 
-.nuevo-carousel-btn{
+.nuevo-carousel-btn {
   position: absolute;
   top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 58%;
+  transform: translate(-30%, -50%);
 }
 
-.bg-docentes{
+.bg-docentes {
   background-image: url("/src/img/slider_down01.jpg");
   background-size: 100%;
 }
 
-.bg-cursos{
+.bg-cursos {
   background-image: url("/src/img/fondoCeleste.png");
   background-size: 100%;
 }
 
-.docentes-recuadro{
+.docentes-recuadro {
   background-color: rgba(247, 241, 241, 0.911);
 }
 
-.docentes-alias{
+.docentes-alias {
   font-size: large;
   font-weight: bolder;
 }
 
-.docentes-titulo{
+.docentes-titulo {
   font-size: medium;
 }
 
 .carousel-docentes .slide {
-    min-width: 33%!important;
+  min-width: 33% !important;
 }
 
 .carousel-cursos .slide {
-  min-width: 25%!important;
+  min-width: 25% !important;
 }
 
-.cursos-body{
-  background-color: rgb(30, 36, 73)!important;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.cursos-body {
+  background-color: rgb(30, 36, 73) !important;
+  height: 360px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
 }
 
-.cursos-img-container{
-  overflow: hidden;
+.cursos-body-texto {
+  height: 200px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.cursos-img-container {
+  overflow: hidden !important;
   width: 100%;
-  height: 160px;
+  height: 160px !important;
 }
 
-
-.cursos-footer{
+.cursos-footer {
   font-size: 15px;
-  
+
   margin-bottom: 0px;
 }
 
-.cursos-footer-container{
+.cursos-footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  
 }
 
-.cursos-nombre{
+.cursos-nombre {
   font-size: 22px;
 }
 
-.cursos-descripcion{
-  font-size: 1vw!important;
+.cursos-descripcion {
+  font-size: 1vw !important;
   word-wrap: break-word;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
 }
 
-.cursos-btn-inscribir{
-  
+.cursos-btn-inscribir {
 }
 
-.cursos-btn-inscribir:hover{
+.cursos-btn-inscribir:hover {
   cursor: pointer;
   color: rgb(182, 141, 17);
 }
 
-.nueva-img-docentes{
-    border: #fff 4px solid!important;
-    border-radius: 1000px!important;
-    width: 19vw!important;
-    aspect-ratio: 1/1;
-}
-
-.cursos-titulo{
-  font-size: 2.5vw!important;
-}
-
-
-.carousel-sponsors .slide {
-  min-width: 20%!important;
-}
-
-.sponsors-img{
-  width: 10vw!important;
+.nueva-img-docentes {
+  border: #fff 4px solid !important;
+  border-radius: 1000px !important;
+  width: 14vw !important;
   aspect-ratio: 1/1;
 }
 
-.sponsors-container{
+.cursos-titulo {
+  font-size: 2.5vw !important;
+}
+
+.carousel-sponsors .slide {
+  min-width: 20% !important;
+}
+
+.sponsors-img {
+  width: 10vw !important;
+  aspect-ratio: 1/1;
+}
+
+.sponsors-container {
   background-color: rgb(0, 12, 54);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.sponsors-titulo{
+.sponsors-titulo {
   font-size: 1.7vw;
   /* min-height: 180px; */
   font-family: arial-rounded;
 }
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -281,63 +284,77 @@
     display: none;
   } */
 
-  .nuevo-carousel-ancho-img{
-    width: 100%!important;
+  .nuevo-carousel-ancho-img {
+    width: 100% !important;
     aspect-ratio: 2/1;
   }
-  .nuevo-carousel-subtitulo{
-    display: none;
+  .nuevo-carousel-subtitulo {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: arial-rounded;
+    font-size: 70%;
   }
-  .nuevo-carousel-titulo{
-    font-size:120%;
+  .nuevo-carousel-titulo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: arial-rounded;
+    font-size: 120%;
   }
-  .nuevo-carousel-btn{
-    /* display: none!important; */
+
+  .protuc-logo {
+    display: none !important;
+  }
+
+  .nuevo-carousel-btn {
+    display: none !important;
   }
   .carousel-docentes .slide {
-    min-width: 100%!important;
+    min-width: 100% !important;
   }
 
   .carousel-cursos .slide {
-    min-width: 100%!important;
+    min-width: 100% !important;
   }
 
-.bg-docentes{
+  .bg-docentes {
     background-image: url("/src/img/slider_down01.jpg");
     background-size: 300%;
   }
 
-  .cursos-titulo{
-  font-size: 5vw!important;
-}
+  .cursos-titulo {
+    font-size: 5vw !important;
+  }
 
-  .nueva-img-docentes{
-    border: #fff 4px solid!important;
-    border-radius: 1000px!important;
-    width: 50vw!important;
+  .nueva-img-docentes {
+    border: #fff 4px solid !important;
+    border-radius: 1000px !important;
+    width: 50vw !important;
     aspect-ratio: 1/1;
-}
-.carousel-sponsors .slide {
-  min-width: 33%!important;
-}
+  }
+  .carousel-sponsors .slide {
+    min-width: 33% !important;
+  }
 
-.sponsors-img{
-  width: 15vw!important;
-  aspect-ratio: 1/1;
-}
+  .sponsors-img {
+    width: 15vw !important;
+    aspect-ratio: 1/1;
+  }
 
-.sponsors-titulo{
-  font-size: 3vw;
-  /* min-height: 180px; */
-  font-family: arial-rounded;
-}
+  .sponsors-titulo {
+    font-size: 3vw;
+    /* min-height: 180px; */
+    font-family: arial-rounded;
+  }
 
-.links-footer{
-  display: none;
-}
+  .links-footer {
+    display: none;
+  }
 
-.cursos-descripcion{
-  font-size: 3.8vw!important;
-}
-  
+  .cursos-descripcion {
+    font-size: 3.8vw !important;
+  }
 }
