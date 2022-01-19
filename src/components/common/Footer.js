@@ -162,10 +162,10 @@ const Footer = () => {
           </div>
           <div className="col-12 d-flex justify-content-center text-light">
             <p>
-              <span className="mx-2">{iconos.facebook}</span>
-              <span className="mx-2">{iconos.instagram}</span>
-              <span className="mx-2">{iconos.linkedin}</span>
-              <span className="mx-2">{iconos.youtube}</span>
+              <span className="mx-1">{iconos.facebook}</span>
+              <span className="mx-1">{iconos.instagram}</span>
+              <span className="mx-1">{iconos.linkedin}</span>
+              <span className="mx-1">{iconos.youtube}</span>
             </p>
           </div>
         </div>
