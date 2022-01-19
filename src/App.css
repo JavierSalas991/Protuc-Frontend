@@ -237,9 +237,6 @@
   font-style: italic;
 }
 
-.cursos-btn-inscribir {
-}
-
 .cursos-btn-inscribir:hover {
   cursor: pointer;
   color: rgb(182, 141, 17);

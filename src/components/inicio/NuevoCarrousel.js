@@ -47,7 +47,7 @@ const NuevoCarrousel = ({
                 <p className="nuevo-carousel-titulo">{item.titulo}</p>
               ) : null}
               {item.subtitulo !== "" ? (
-                <p className="nuevo-carousel-subtitulo">{item.subtitulo}</p>
+                <p className="nuevo-carousel-subtitulo d-none d-md-block">{item.subtitulo}</p>
               ) : null}
               {item.texto_boton !== "" ? (
                 <Button
