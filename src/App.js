@@ -7,7 +7,6 @@ import 'antd/dist/antd.css';
 
 function App() {
 
-
   return (
     <Router basename="/protuc">
       <Routes>
