@@ -57,7 +57,7 @@ const Inicio = () => {
           <NavHamburguesa />
           {/* <Header infoGeneral={infoGeneral} /> */}
           <NavbarProtuc/>
-          <Carrousel infoCarousel={infoGeneral.carrousel}></Carrousel>
+          {/* <Carrousel infoCarousel={infoGeneral.carrousel}></Carrousel> */}
           <NuevoCarrousel info={infoGeneral.carrousel} imagesAtOnce={3} showArrows={false} showIndicators={true} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={false} infiniteLoop={true} stopOnHover={false} swipeable={false} animationHandler={'fade'}/>
           {/* {sponsors !== null ? (
               <NuevaEmpresas info={sponsors} showArrows={false} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={false} />

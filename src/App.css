@@ -138,21 +138,18 @@
 }
 
 .nuevo-carousel-titulo {
-  position: absolute;
-  top: 45%;
-  left: 55%;
-  transform: translate(-35%, -50%);
   font-family: arial-rounded;
-  font-size: 210%;
+  font-size: 2.8em;
+}
+
+.divisor-carrousel-titulos{
+  width: 50%;
+  border: #fff;
 }
 
 .nuevo-carousel-subtitulo {
-  position: absolute;
-  top: 65%;
-  left: 53%;
-  transform: translate(-35%, -50%);
   font-family: arial-rounded;
-  font-size: 120%;
+  font-size: 1.1em;
 }
 
 .nuevo-carousel-btn {
