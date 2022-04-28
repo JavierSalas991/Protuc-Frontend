@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 export const iconos = {
   dropDown: (
@@ -18,6 +18,7 @@ export const iconos = {
     </svg>
   ),
   estrella: <FontAwesomeIcon size="lg" icon={faStar} />,
+  play: <FontAwesomeIcon size="lg" icon={faPlay} />,
   instagram: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
