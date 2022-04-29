@@ -31,7 +31,7 @@ const Avion = () => {
                     <img src={avion} style={{width: "130%", position: 'relative', bottom: "1.4em"}}></img>
                 </div>
                 <div className='col-4 text-light'>
-                    <img src={mujer} style={{width: "20%", position: 'absolute', top: "12.5em", right: "3.5em"}}></img>
+                    <img src={mujer} style={{width: "20%", position: 'absolute', top: "40vw", right: "10vw"}}></img>
                 </div>
             </div>
         </div>

@@ -129,12 +129,9 @@
 }
 
 .protuc-logo {
-  position: absolute;
-  top: 50%;
-  left: 18%;
-  transform: translate(-50%, -50%);
-  /* aspect-ratio: 1; */
-  width: 12% !important;
+  width: 10vw !important;
+  height: 13vw;
+  margin-top: 40%;
 }
 
 .nuevo-carousel-titulo {
@@ -143,8 +140,9 @@
 }
 
 .divisor-carrousel-titulos{
-  width: 50%;
-  border: #fff;
+  width: 25%;
+  border: rgb(4, 218, 220) solid 3px;
+  border-radius: 10px;
 }
 
 .nuevo-carousel-subtitulo {
