@@ -16,15 +16,12 @@ import NuevaEmpresas from "./NuevaEmpresas";
 import Avion from "./Avion";
 import Carrousel from "./Carrousel";
 
-const Inicio = () => {
-  const [infoGeneral, setInfoGeneral] = useState(null);
+const Inicio = ({ infoGeneral }) => {
+
   const [cursos, setCursos] = useState(null);
   const [sponsors, setSponsors] = useState(null);
 
-  const getHome = async () => {
-    const res = await Axios.get("http://flydevs.ddns.net/protucapi/home/");
-    return res;
-  };
+
 
   const getCursos = async () => {
     const res = await Axios.get("http://flydevs.ddns.net/protucapi/cursos/");
@@ -37,49 +34,43 @@ const Inicio = () => {
   }
 
   useEffect(async () => {
-    let res = await getHome();
     let cursos_ = await getCursos();
     let sponsors_ = await getSponsors();
-    setInfoGeneral(res.data);
     setCursos(cursos_.data);
     setSponsors(sponsors_.data);
-    
-    
   }, []);
 
   return (
-    <Fragment>
-      {infoGeneral ? (
-        <>
-          {infoGeneral.banner_header[0].activo ? (
-            <PublicidadHeader banner_header={infoGeneral.banner_header[0]} />
-          ) : null}
-          <NavHamburguesa />
-          {/* <Header infoGeneral={infoGeneral} /> */}
-          <NavbarProtuc/>
-          {/* <Carrousel infoCarousel={infoGeneral.carrousel}></Carrousel> */}
-          <NuevoCarrousel info={infoGeneral.carrousel} imagesAtOnce={3} showArrows={false} showIndicators={true} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={false} infiniteLoop={true} stopOnHover={false} swipeable={false} animationHandler={'fade'}/>
-          {/* {sponsors !== null ? (
+
+    <>
+      {infoGeneral.banner_header[0].activo ? (
+        <PublicidadHeader banner_header={infoGeneral.banner_header[0]} />
+      ) : null}
+      <NavHamburguesa />
+      {/* <Header infoGeneral={infoGeneral} /> */}
+      <NavbarProtuc />
+      {/* <Carrousel infoCarousel={infoGeneral.carrousel}></Carrousel> */}
+      <NuevoCarrousel info={infoGeneral.carrousel} imagesAtOnce={3} showArrows={false} showIndicators={true} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={false} infiniteLoop={true} stopOnHover={false} swipeable={false} animationHandler={'fade'} />
+      {/* {sponsors !== null ? (
               <NuevaEmpresas info={sponsors} showArrows={false} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={false} />
                 
           ) : (
             null
           )}  */}
-          <Avion></Avion>
-          {/* <Empresas /> */}
-          {/* <CursosYProgramas /> */}
-          {cursos !== null ? (
-            <NuevoCurso info={cursos} showArrows={true} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={true} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={true} />
-          ):(
-            null
-          )}
-          <Novedades />
-          {/* <NuestroStaff docentes={infoGeneral.docentes} /> */}
-          <NuevoStaff info={infoGeneral.docentes} showArrows={false} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={false}/> 
-          <Footer></Footer>
-        </>
-      ) : null}
-    </Fragment>
+      <Avion></Avion>
+      {/* <Empresas /> */}
+      {/* <CursosYProgramas /> */}
+      {cursos !== null ? (
+        <NuevoCurso info={cursos} showArrows={true} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={true} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={true} />
+      ) : (
+        null
+      )}
+      <Novedades />
+      {/* <NuestroStaff docentes={infoGeneral.docentes} /> */}
+      <NuevoStaff info={infoGeneral.docentes} showArrows={false} showIndicators={false} showStatus={false} showThumbs={false} autoFocus={false} autoPlay={true} centerMode={true} infiniteLoop={true} stopOnHover={false} />
+      <Footer></Footer>
+    </>
+
   );
 };
 
