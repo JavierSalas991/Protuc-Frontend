@@ -1,9 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./components/inicio/Inicio";
-import { Fragment } from "react";
 import 'antd/dist/antd.css';
-
 
 function App() {
 
