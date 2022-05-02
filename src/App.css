@@ -129,30 +129,25 @@
 }
 
 .protuc-logo {
-  position: absolute;
-  top: 50%;
-  left: 18%;
-  transform: translate(-50%, -50%);
-  /* aspect-ratio: 1; */
-  width: 12% !important;
+  width: 10vw !important;
+  height: 13vw;
+  margin-top: 40%;
 }
 
 .nuevo-carousel-titulo {
-  position: absolute;
-  top: 45%;
-  left: 55%;
-  transform: translate(-35%, -50%);
   font-family: arial-rounded;
-  font-size: 210%;
+  font-size: 2.8em;
+}
+
+.divisor-carrousel-titulos{
+  width: 25%;
+  border: rgb(4, 218, 220) solid 3px;
+  border-radius: 10px;
 }
 
 .nuevo-carousel-subtitulo {
-  position: absolute;
-  top: 65%;
-  left: 53%;
-  transform: translate(-35%, -50%);
   font-family: arial-rounded;
-  font-size: 120%;
+  font-size: 1.1em;
 }
 
 .nuevo-carousel-btn {
@@ -268,6 +263,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 
 .sponsors-titulo {
   font-size: 1.7vw;
