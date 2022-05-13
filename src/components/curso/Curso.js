@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Footer from '../common/Footer';
 import PublicidadHeader from '../common/PublicidadHeader';
+import ModalFromulario from '../formulario/ModalFromulario';
 import NavHamburguesa from '../inicio/NavHamburguesa';
 import CuerpoCurso from './CuerpoCurso';
 import NavbarCurso from './NavbarCurso';
 
 const Curso = ({ infoGeneral }) => {
+
+    //modal form
+    const [showFormulario, setShowFormulario] = useState(false);
+    const handleCloseFormulario = () => {
+        setShowFormulario(false);
+    }
+
     return (
         <div className='fondo-gris'>
             {infoGeneral.banner_header[0].activo ? (
@@ -13,9 +21,9 @@ const Curso = ({ infoGeneral }) => {
             ) : null}
             <NavHamburguesa></NavHamburguesa>
             <NavbarCurso></NavbarCurso>
-            <CuerpoCurso></CuerpoCurso>
+            <CuerpoCurso setShowFormulario={setShowFormulario}></CuerpoCurso>
             <Footer color='light'></Footer>
-
+            <ModalFromulario show={showFormulario} handleClose={handleCloseFormulario}></ModalFromulario>
         </div>
     );
 };

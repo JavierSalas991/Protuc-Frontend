@@ -295,7 +295,7 @@ const Footer = ({ color }) => {
                         style={{ border: 'solid 1px grey', "border-radius": "4px", "font-size": "50%" }}
                         className="bg-white w-100  mb-3"
                       >
-                        <label className="w-100" controlId="">
+                        <label className="w-100" controlId="" >
                           <input
                             type="email"
                             placeholder="mail@ejemplo.com"
