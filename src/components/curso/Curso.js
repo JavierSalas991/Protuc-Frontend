@@ -9,7 +9,7 @@ import NavbarCurso from './NavbarCurso';
 const Curso = ({ infoGeneral }) => {
 
     //modal form
-    const [showFormulario, setShowFormulario] = useState(true);
+    const [showFormulario, setShowFormulario] = useState(false);
     const handleCloseFormulario = () => {
         setShowFormulario(false);
     }
@@ -21,7 +21,7 @@ const Curso = ({ infoGeneral }) => {
             ) : null}
             <NavHamburguesa></NavHamburguesa>
             <NavbarCurso></NavbarCurso>
-            <CuerpoCurso></CuerpoCurso>
+            <CuerpoCurso setShowFormulario={setShowFormulario}></CuerpoCurso>
             <Footer color='light'></Footer>
             <ModalFromulario show={showFormulario} handleClose={handleCloseFormulario}></ModalFromulario>
         </div>

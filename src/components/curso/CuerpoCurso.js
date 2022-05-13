@@ -3,7 +3,7 @@ import imgDerecha from '../../img/mujerNotebook.png'
 import cursosOnline from '../../img/cursosOnline.png'
 import { iconos } from '../helpers/iconos';
 
-const CuerpoCurso = () => {
+const CuerpoCurso = ({setShowFormulario}) => {
 
     const [mostrarDetallesCurso, setMostrarDetallesCurso] = useState(false)
 
@@ -71,7 +71,7 @@ const CuerpoCurso = () => {
                             <span className='fuente2 ms-0' style={{ fontSize: '1.6em', display: "table-cell", verticalAlign: "middle" }}>AR$4500</span>
                         </h3>
 
-                        <button style={{ fontSize: "1.5vw", borderRadius: "1.2vw" }} className='boton-morado fuente1 my-2'>
+                        <button onClick={() => setShowFormulario(true)} style={{ fontSize: "1.5vw", borderRadius: "1.2vw" }} className='boton-morado fuente1 my-2'>
                             Consultar ahora
                         </button>
                         <button style={{ fontSize: "1.5vw", borderRadius: "1.2vw" }} className='boton-morado-outline fuente1 my-2'>
@@ -168,7 +168,7 @@ const CuerpoCurso = () => {
                             <span className='fuente2 ms-0' style={{ fontSize: '1.6em', display: "table-cell", verticalAlign: "middle" }}>AR$4500</span>
                         </h3>
 
-                        <button style={{ fontSize: "4.5vw", borderRadius: "3vw" }} className='boton-morado fuente1 my-2'>
+                        <button  onClick={() => setShowFormulario(true)} style={{ fontSize: "4.5vw", borderRadius: "3vw" }} className='boton-morado fuente1 my-2'>
                             Consultar ahora
                         </button>
                         <button style={{ fontSize: "4.5vw", borderRadius: "3vw" }} className='boton-morado-outline fuente1 my-2'>

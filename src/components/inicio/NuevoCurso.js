@@ -18,7 +18,7 @@ const NuevoCurso = ({
   const [cantImagenes, setCantImagenes] = useState(4);
 
   const handleInscripcion = () => {
-    console.log("desde inscribirse");
+    window.location = "/protuc/curso"
   };
 
   useEffect(() => {
