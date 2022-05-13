@@ -14,6 +14,7 @@ const CuerpoCurso = () => {
             setMostrarDetallesCurso(true)
         }
     }
+    
     return (
         <>
             <div className='d-none d-md-block'>
