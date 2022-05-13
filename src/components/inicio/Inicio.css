@@ -168,6 +168,9 @@
 .fondo-gris {
   background-color: #f6f7f9;
 }
+.fondo-gris-2 {
+  background-color: #8D8D9D;
+}
 
 .fuente1 {
   font-family: fredoka-one;
@@ -202,11 +205,9 @@
 .boton-morado {
   width: 85%;
   aspect-ratio: 5/1;
-  border-radius: 1.2vw;
   border: none;
   background-color: #4a22f4;
   color: #fff;
-  font-size: 1.5vw;
 }
 .boton-morado:hover {
   background-color: #3817cf;
@@ -218,7 +219,6 @@
   border-radius: 1.2vw;
   border: #4a22f4 solid 2px;
   color: #4a22f4;
-  font-size: 1.5vw;
 }
 .boton-morado-outline:hover {
   background-color: #3817cf;
