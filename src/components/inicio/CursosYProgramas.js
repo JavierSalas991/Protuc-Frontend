@@ -3,6 +3,7 @@ import { Card, Carousel } from "react-bootstrap";
 import { Row, Col } from "antd";
 import imagenPrueba from "../../img/cursos/curso1.png";
 
+
 const CursosYProgramas = () => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(
     "todas_las_categorias"

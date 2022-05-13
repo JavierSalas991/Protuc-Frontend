@@ -1,11 +1,12 @@
 import React from "react";
 import "./PublicidadHeader.css";
 import { Row, Col } from "antd";
+import { Button } from 'react-bootstrap';
 
 const PublicidadHeader = ({ banner_header }) => {
   console.log(banner_header);
   return (
-    <div id="fondo" className="text-light">
+    <div id="fondo" className="text-light alto-banner">
       <div className="d-none d-md-block h-100">
         <div className="row h-100 container-fluid">
           <div className="col-3 h-100  d-flex justify-content-center">
@@ -13,7 +14,7 @@ const PublicidadHeader = ({ banner_header }) => {
               <img
                 src={`http://flydevs.ddns.net/media/${banner_header.img_izq}`}
                 alt={`${banner_header.img_izq_nombre}`}
-                className="h-100"
+                className=""
               ></img>
          
           </div>
@@ -32,12 +33,19 @@ const PublicidadHeader = ({ banner_header }) => {
           </div>
           <div className="col-2 h-100">
             <div className="d-flex h-100 justify-content-center align-items-center">
-              <button
-                className="boton-celeste px-2 pt-1 pb-1"
+              {/* <button
+                className="boton-celeste p-1"
                 style={{ "white-space": "nowrap" }}
               >
                 {banner_header.texto_boton}
-              </button>
+              </button> */}
+
+                <Button
+                  variant={"info"}
+                  className="boton-celeste rounded-pill text-light py-2"
+                >
+                  {banner_header.texto_boton}
+                </Button>
             </div>
           </div>
           <div className="col-sm-1 col-md-2 h-100 d-flex justify-content-center align-items-center">
