@@ -9,7 +9,7 @@ const ModalFromulario = ({ show, handleClose }) => {
         show={show}
         onHide={handleClose}
         animation={true}
-        size="xl"
+        size="lg"
         className="p-0 m-0"
       >
         {/* dispositivos grandes: */}
@@ -17,36 +17,36 @@ const ModalFromulario = ({ show, handleClose }) => {
           <div className="row m-0 p-0">
             <div className="col-6 m-0 p-0  h-100">
               <div
-                className=" m-0  d-flex flex-column justify-content-center align-items-center"
-                style={{ padding: "2.7vw" }}
+                className=" m-0 d-flex flex-column justify-content-center align-items-center"
+                style={{ padding: "0.8vw 1.5vw" }}
               >
                 <p
-                  className="text-light fuente2 mb-0 mt-3 text-center"
-                  style={{ fontSize: "3.2vw" }}
+                  className="text-light fuente2 m-0 p-0 text-center"
+                  style={{ fontSize: "2.4vw" }}
                 >
                   Sumate a Protuc
                 </p>
                 <p
-                  className="colorsito-celeste fuente3 mt-0  text-center"
-                  style={{ fontSize: "2.3vw" }}
+                  className="colorsito-celeste fuente3 m-0 p-0  text-center"
+                  style={{ fontSize: "1.8vw" }}
                 >
                   Dejanos tu consulta!
                 </p>
                 <p
-                  className="text-light fuente3 text-center mb-0"
-                  style={{ fontSize: "1.4vw" }}
+                  className="text-light fuente3 text-center mt-2 mb-0 p-0"
+                  style={{ fontSize: "1.1vw" }}
                 >
                   Un asesor educativo te está esperando por asesoramiento!
                 </p>
 
-                <div className="px-4 pt-3 w-100 d-flex flex-column align-items-start">
+                <div className="px-4 pt-1 w-100 d-flex flex-column align-items-start">
                   <p
                     className="text-light fuente2 mb-0"
-                    style={{ fontSize: "1.5vw" }}
+                    style={{ fontSize: "1.2vw" }}
                   >
                     Nombre
                   </p>
-                  <form className="w-100 " style={{ height: "5vw" }}>
+                  <form className="w-100 text-light" style={{ height: "2.8vw" }}>
                     <label className="w-100 h-100" controlId="">
                       <input
                         type="email"
@@ -60,14 +60,14 @@ const ModalFromulario = ({ show, handleClose }) => {
                     </label>
                   </form>
                 </div>
-                <div className="px-4 pt-3 mb-2 w-100 d-flex flex-column align-items-start">
+                <div className="px-4 pt-3 mb-1 w-100 d-flex flex-column align-items-start">
                   <p
                     className="text-light fuente2 mb-0"
-                    style={{ fontSize: "1.5vw" }}
+                    style={{ fontSize: "1.2vw" }}
                   >
                     Número de Celular
                   </p>
-                  <form className="w-100 " style={{ height: "5vw" }}>
+                  <form className="w-100 text-light" style={{ height: "2.8vw" }}>
                     <label className="w-100 h-100" controlId="">
                       <input
                         type="email"
@@ -84,7 +84,7 @@ const ModalFromulario = ({ show, handleClose }) => {
                 <button
                   className="fuente3 text-light mt-4"
                   style={{
-                    padding: "1.5vw 5vw",
+                    padding: "1vw 4vw",
                     border: "none",
                     borderRadius: "6px",
                     backgroundColor: "#8D8D9D",
@@ -95,8 +95,8 @@ const ModalFromulario = ({ show, handleClose }) => {
                 </button>
                 <p
                   onClick={handleClose}
-                  className="colorsito-celeste fuente2 mt-4 mb-0 pt-2 cursor-pointer text-center"
-                  style={{ fontSize: "1.5vw" }}
+                  className="colorsito-celeste fuente2 mt-2 mb-0 pt-2 cursor-pointer text-center"
+                  style={{ fontSize: "1.2vw" }}
                 >
                   Cerrar
                 </p>
@@ -107,6 +107,7 @@ const ModalFromulario = ({ show, handleClose }) => {
             </div>
           </div>
         </div>
+
         {/* dispositivos chicos: */}
         <div
           className="d-block d-md-none background-azul-modal d-flex flex-column justify-content-center align-items-center"

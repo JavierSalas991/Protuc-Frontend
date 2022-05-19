@@ -23,7 +23,7 @@
   color: #fff;
   padding-right: 8px;
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .p-navbar:hover {
   color: rgb(5, 217, 218);
@@ -34,7 +34,7 @@
   color: #fff;
   padding-right: 8px;
   margin: 0;
-  font-size: 1.7vw;
+  font-size: 1.4vw;
 }
 .p-navbar-curso:hover {
   color: rgb(5, 217, 218);
@@ -235,8 +235,8 @@
 .img-cursos-online{
   border-radius: 15px;
   position: relative;
-  width: 27vw;
-  bottom: 15vw;
+  width: 24vw;
+  bottom: 10vw;
 }
 .boton-morado-2 {
   width: 65%;
@@ -247,7 +247,7 @@
   color: #fff;
   font-size: 1.5vw;
   position: relative;
-  bottom: 20.5vw;
+  bottom: 15vw;
 }
 .boton-morado-2:hover {
   background-color: #3817cf;

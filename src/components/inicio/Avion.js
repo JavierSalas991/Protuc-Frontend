@@ -9,7 +9,7 @@ const Avion = () => {
       {/* dispositivos grandes */}
       <div
         className="arial-rounded background-azul-mas-oscuro d-none d-md-block"
-        style={{ fontSize: "3vw", padding: "1.6em 0" }}
+        style={{ fontSize: "2.6vw", padding: "1.6em 0" }}
       >
         <div
           style={{ "background-color": "rgb(29, 33, 60)", margin: "0 5%" }}
@@ -17,7 +17,7 @@ const Avion = () => {
         >
           <div className="col-7">
             <div className="row" style={{ borderBottom: "solid 0.05em #fff" }}>
-              <div className="col-1 text-light" style={{ fontSize: "0.7em" }}>
+              <div className="col-1 text-light" style={{ fontSize: "0.6em" }}>
                 {iconos.play}
               </div>
               <div className="col-11 text-light pb-2">
@@ -45,14 +45,14 @@ const Avion = () => {
           <div className="col-1 text-light">
             <img
               src={avion}
-              style={{ width: "130%", position: "relative", bottom: "1.4em" }}
+              style={{ width: "110%", position: "relative", bottom: "1.4em" }}
             ></img>
           </div>
           <div className="col-4 text-light">
             <img
               src={mujer}
               style={{
-                width: "20%",
+                width: "17%",
                 position: "absolute",
                 top: "40vw",
                 right: "10vw",

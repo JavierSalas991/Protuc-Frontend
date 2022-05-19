@@ -33,16 +33,10 @@ const PublicidadHeader = ({ banner_header }) => {
           </div>
           <div className="col-2 h-100">
             <div className="d-flex h-100 justify-content-center align-items-center">
-              {/* <button
-                className="boton-celeste p-1"
-                style={{ "white-space": "nowrap" }}
-              >
-                {banner_header.texto_boton}
-              </button> */}
 
                 <Button
                   variant={"info"}
-                  className="boton-celeste rounded-pill text-light py-2"
+                  className="boton-celeste rounded-pill text-light"
                 >
                   {banner_header.texto_boton}
                 </Button>
@@ -78,28 +72,19 @@ const PublicidadHeader = ({ banner_header }) => {
               <h4 id="titulo-publicidad" className="mt-2 text-center">
                 {banner_header.texto_principal}
               </h4>
-              {/* {banner_header.texto_secundario !== "" ? (
-                <p id="subtitulo-publicidad">{banner_header.texto_secundario}</p>
-              ) : null} */}
             </div>
           </div>
           <div className="col-2 h-100">
             <div className="d-flex h-100 justify-content-center align-items-center">
-              <button
-                className="boton-celeste px-4 pt-1 pb-2"
-                style={{ "white-space": "nowrap" }}
-              >
-                {banner_header.texto_boton}
-              </button>
+              <Button
+                  variant={"info"}
+                  className="boton-celeste rounded-pill text-light"
+                  style={{ "white-space": "nowrap" }}
+                >
+                  {banner_header.texto_boton}
+                </Button>
             </div>
           </div>
-          {/* <div className="col-2 h-100 d-flex justify-content-center align-items-center">
-            <img
-              src={`http://flydevs.ddns.net/media/${banner_header.img_der}`}
-              alt={`${banner_header.img_der_nombre}`}
-              className="h-75"
-            ></img>
-          </div> */}
         </div>
       </div>
     </div>

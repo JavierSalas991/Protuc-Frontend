@@ -11,7 +11,7 @@ const Novedades = () => {
       {/* dispositivos grandes */}
       <div
         className="d-none d-md-block pt-3 arial-rounded background-azul-oscuro"
-        style={{ "font-size": "3vw" }}
+        style={{ "font-size": "2.5vw" }}
         >
         <hr className="text-light"></hr>
         <div className="d-flex justify-content-center">
@@ -21,7 +21,7 @@ const Novedades = () => {
           style={{ "background-color": "rgb(29, 33, 60)", margin: "0 5%" }}
           className="row py-4"
         >
-          <div className="col-6 contenedor-novedades  d-flex flex-column justify-content-center align-items-center">
+          <div className="col-6 contenedor-novedades  d-flex flex-column justify-content-center align-items-center px-4">
             <div className="cuadro-blanco">
               <div className="imagen-desplazada">
                 <img src={imagenPrueba} className="w-100 h-100"></img>
