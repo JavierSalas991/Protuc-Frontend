@@ -51,23 +51,23 @@ const Footer = ({ color }) => {
                     Sumate al newsletter
                   </p>
                   <div className="">
-                    <form className="">
-                      <div
-                        style={{ "border-radius": "4px", "font-size": "50%" }}
-                        className="bg-light w-100  mb-3"
-                      >
-                        <label className="w-100" controlId="">
-                          <input
-                            type="email"
-                            placeholder="mail@ejemplo.com"
-                            className="w-100 my-2 ps-2"
-                            style={{
-                              border: "none",
-                              "background-color": "transparent",
-                            }}
-                          />
-                        </label>
-                      </div>
+
+                    <form className="w-100 ">
+                      <label
+                        className="w-100 mb-2">
+                        <input
+                          type="email"
+                          placeholder="mail@ejemplo.com"
+                          className="w-100 h-100 my-2 ps-2 colorgris0"
+                          style={{
+                            border: "grey 1px solid",
+                            "background-color": "#fff",
+                            "border-radius": "4px",
+                            "font-size": "50%",
+                            padding: '0.75vw 0'
+                          }}
+                        />
+                      </label>
                       <button
                         className="boton-celeste-cuadrado px-4 pt-1 pb-1 w-100"
                         style={{ "white-space": "nowrap", "font-size": "75%" }}
@@ -75,6 +75,7 @@ const Footer = ({ color }) => {
                         Suscribirme
                       </button>
                     </form>
+
                   </div>
                 </div>
               </div>
@@ -121,23 +122,22 @@ const Footer = ({ color }) => {
                     Sumate al newsletter
                   </p>
                   <div className="">
-                    <form className="">
-                      <div
-                        style={{ "border-radius": "4px", "font-size": "50%" }}
-                        className="bg-light w-100  mb-3"
-                      >
-                        <label className="w-100" controlId="">
-                          <input
-                            type="email"
-                            placeholder="mail@ejemplo.com"
-                            className="w-100 my-2 ps-2"
-                            style={{
-                              border: "none",
-                              "background-color": "transparent",
-                            }}
-                          />
-                        </label>
-                      </div>
+                  <form className="w-100 ">
+                      <label
+                        className="w-100 mb-1">
+                        <input
+                          type="email"
+                          placeholder="mail@ejemplo.com"
+                          className="w-100 h-100 my-2 ps-2 colorgris0"
+                          style={{
+                            border: "grey 1px solid",
+                            "background-color": "#fff",
+                            "border-radius": "4px",
+                            "font-size": "50%",
+                            padding: '1.7vw 0 '
+                          }}
+                        />
+                      </label>
                       <button
                         className="boton-celeste-cuadrado px-4 pt-1 pb-1 w-100"
                         style={{ "white-space": "nowrap", "font-size": "75%" }}
@@ -220,23 +220,23 @@ const Footer = ({ color }) => {
                     Sumate al newsletter
                   </p>
                   <div className="">
-                    <form className="">
-                      <div
-                        style={{ border: 'solid 1px grey', "border-radius": "4px", "font-size": "50%" }}
-                        className="bg-white w-100  mb-3"
-                      >
-                        <label className="w-100" controlId="">
-                          <input
-                            type="email"
-                            placeholder="mail@ejemplo.com"
-                            className="w-100 my-2 ps-2"
-                            style={{
-                              border: "none",
-                              "background-color": "transparent",
-                            }}
-                          />
-                        </label>
-                      </div>
+
+                    <form className="w-100 ">
+                      <label
+                        className="w-100  mb-2">
+                        <input
+                          type="email"
+                          placeholder="mail@ejemplo.com"
+                          className="w-100 h-100 my-2 ps-2 colorgris0"
+                          style={{
+                            border: "grey 1px solid",
+                            "background-color": "#fff",
+                            "border-radius": "4px",
+                            "font-size": "50%",
+                            padding: '0.75vw 0'
+                          }}
+                        />
+                      </label>
                       <button
                         className="boton-gris-cuadrado px-4 pt-1 pb-1 w-100"
                         style={{ "white-space": "nowrap", "font-size": "75%" }}
@@ -244,6 +244,7 @@ const Footer = ({ color }) => {
                         Suscribirme
                       </button>
                     </form>
+
                   </div>
                 </div>
               </div>
@@ -290,23 +291,23 @@ const Footer = ({ color }) => {
                     Sumate al newsletter
                   </p>
                   <div className="">
-                    <form className="">
-                      <div
-                        style={{ border: 'solid 1px grey', "border-radius": "4px", "font-size": "50%" }}
-                        className="bg-white w-100  mb-3"
-                      >
-                        <label className="w-100" controlId="" >
-                          <input
-                            type="email"
-                            placeholder="mail@ejemplo.com"
-                            className="w-100 my-2 ps-2"
-                            style={{
-                              border: "none",
-                              "background-color": "transparent",
-                            }}
-                          />
-                        </label>
-                      </div>
+
+                    <form className="w-100 ">
+                      <label
+                        className="w-100 mb-1">
+                        <input
+                          type="email"
+                          placeholder="mail@ejemplo.com"
+                          className="w-100 h-100 my-2 ps-2 colorgris0"
+                          style={{
+                            border: "grey 1px solid",
+                            "background-color": "#fff",
+                            "border-radius": "4px",
+                            "font-size": "50%",
+                            padding: '1.7vw 0 '
+                          }}
+                        />
+                      </label>
                       <button
                         className="boton-gris-cuadrado px-4 pt-1 pb-1 w-100"
                         style={{ "white-space": "nowrap", "font-size": "75%" }}
@@ -314,6 +315,8 @@ const Footer = ({ color }) => {
                         Suscribirme
                       </button>
                     </form>
+
+
                   </div>
                 </div>
               </div>

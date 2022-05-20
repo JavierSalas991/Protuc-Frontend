@@ -73,10 +73,10 @@ const CuerpoCurso = ({setShowFormulario}) => {
                             <span className='fuente2 ms-0' style={{ fontSize: '1.6em', display: "table-cell", verticalAlign: "middle" }}>AR$4500</span>
                         </h3>
 
-                        <button onClick={() => setShowFormulario(true)} style={{ fontSize: "1.5vw", borderRadius: "1.2vw" }} className='boton-morado fuente1 my-2'>
+                        <button onClick={() => setShowFormulario(true)} style={{ fontSize: "1.3vw", borderRadius: "1vw" }} className='boton-morado fuente1 my-2'>
                             Consultar ahora
                         </button>
-                        <button style={{ fontSize: "1.5vw", borderRadius: "1.2vw" }} className='boton-morado-outline fuente1 my-2'>
+                        <button style={{ fontSize: "1.3vw", borderRadius: "1vw" }} className='boton-morado-outline fuente1 my-2'>
                             {iconos.regalo} <span className='ms-1'>Regalar</span>
                         </button>
                     </div>

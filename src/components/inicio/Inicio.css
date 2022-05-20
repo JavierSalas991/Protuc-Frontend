@@ -206,7 +206,7 @@
   color: #b3b3b3;
 }
 .boton-morado {
-  width: 85%;
+  width: 75%;
   aspect-ratio: 5/1;
   border: none;
   background-color: #4a22f4;
@@ -217,7 +217,7 @@
   transition: 0.2s;
 }
 .boton-morado-outline {
-  width: 85%;
+  width: 75%;
   aspect-ratio: 5/1;
   border-radius: 1.2vw;
   border: #4a22f4 solid 2px;

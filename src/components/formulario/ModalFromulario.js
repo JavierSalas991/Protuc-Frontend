@@ -142,7 +142,7 @@ const ModalFromulario = ({ show, handleClose }) => {
             <form className="w-100 " style={{ height: "12vw" }}>
               <label className="w-100 h-100" controlId="">
                 <input
-                  type="email"
+                  type="text"
                   className="w-100 h-100 my-2 ps-2"
                   style={{
                     border: "3px solid #3D405B",
@@ -163,7 +163,7 @@ const ModalFromulario = ({ show, handleClose }) => {
             <form className="w-100 " style={{ height: "12vw" }}>
               <label className="w-100 h-100" controlId="">
                 <input
-                  type="email"
+                  type="number"
                   className="w-100 h-100 my-2 ps-2"
                   style={{
                     border: "3px solid #3D405B",

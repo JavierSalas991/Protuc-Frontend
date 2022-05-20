@@ -23,8 +23,8 @@ export const iconos = {
   instagram: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      width="30"
+      height="30"
       fill="currentColor"
       class="bi bi-instagram"
       viewBox="0 0 16 16"
@@ -35,8 +35,8 @@ export const iconos = {
   facebook: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      width="30"
+      height="30"
       fill="currentColor"
       class="bi bi-facebook"
       viewBox="0 0 16 16"
@@ -47,8 +47,8 @@ export const iconos = {
   linkedin: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      width="30"
+      height="30"
       fill="currentColor"
       class="bi bi-linkedin"
       viewBox="0 0 16 16"
@@ -59,8 +59,8 @@ export const iconos = {
   youtube: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      width="33"
+      height="33"
       fill="currentColor"
       class="bi bi-youtube"
       viewBox="0 0 16 16"
