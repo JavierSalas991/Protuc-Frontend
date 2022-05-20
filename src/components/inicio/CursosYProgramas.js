@@ -40,7 +40,7 @@ const CursosYProgramas = () => {
                   style={{ "background-color": "rgb(29, 33, 60)" }}
                 >
                   <Card.Img variant="top" src={`${imagenPrueba}`} />
-                  <Card.Body className="pb-0  d-flex flex-column justify-content-between">
+                  <Card.Body className="d-flex flex-column justify-content-between">
                     <Card.Title
                       className="text-light"
                       style={{ "font-size": "60%" }}
