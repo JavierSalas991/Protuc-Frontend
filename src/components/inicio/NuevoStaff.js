@@ -2,6 +2,7 @@ import { React, useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Button } from "react-bootstrap";
+import { urlServidor } from "../helpers/urlHelper";
 
 const NuevoStaff = ({
   info,
@@ -68,7 +69,7 @@ const NuevoStaff = ({
                 <>
                   <img
                     className="nueva-img-docentes rounded-circle"
-                    src={`http://flydevs.ddns.net/media/${item.foto_personal}`}
+                    src={`${urlServidor}/media/${item.foto_personal}`}
                   />
                   <div className="rounded d-flex justify-content-center ">
                     <p className="mt-3 px-4 py-2 rounded text-dark docentes-recuadro">

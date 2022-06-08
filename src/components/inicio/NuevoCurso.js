@@ -2,6 +2,7 @@ import { React, useEffect, useState, Fragment } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Button, Card } from "react-bootstrap";
+import { urlServidor } from "../helpers/urlHelper";
 
 const NuevoCurso = ({
   info,
@@ -75,7 +76,7 @@ const NuevoCurso = ({
                 //   <div className="cursos-img-container">
                 //     <img
                 //       className="w-100"
-                //       src={`http://flydevs.ddns.net/media/${item.imagen}`}
+                //       src={`${urlServidor}/media/${item.imagen}`}
                 //     />
                 //   </div>
                 //   <div className="p-2 cursos-body-texto d-flex flex-column justify-content-between bg-success">
@@ -111,7 +112,7 @@ const NuevoCurso = ({
                   <div className="cursos-img-container">
                     <img
                       className="w-100"
-                      src={`http://flydevs.ddns.net/media/${item.imagen}`}
+                      src={`${urlServidor}/media/${item.imagen}`}
                     />
                   </div>
                   <Card.Body className="p-4 d-flex flex-column justify-content-between">

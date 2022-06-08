@@ -5,6 +5,7 @@ import Inicio from "./components/inicio/Inicio";
 import 'antd/dist/antd.css';
 import Curso from "./components/curso/Curso";
 import Axios from "axios";
+import { urlServidor } from "./components/helpers/urlHelper";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   const [infoGeneral, setInfoGeneral] = useState(null);
 
   const getHome = async () => {
-    const res = await Axios.get("http://flydevs.ddns.net/protucapi/home/");
+    const res = await Axios.get(`${urlServidor}/protucapi/home/`);
     return res;
   };
 

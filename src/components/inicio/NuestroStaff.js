@@ -3,6 +3,7 @@ import { Carousel } from "react-bootstrap";
 import fondoCeleste from "../../img/slider_down01.jpg";
 import fondoNaranja from "../../img/fondoNaranja.png";
 import fondoVerde from "../../img/fondoVerde.png";
+import { urlServidor } from "../helpers/urlHelper";
 
 const NuestroStaff = ({ docentes }) => {
   return (
@@ -32,7 +33,7 @@ const NuestroStaff = ({ docentes }) => {
                         <div>
                           <img
                             className="img-docente"
-                            src={`http://flydevs.ddns.net/media/${docente.foto_personal}`}
+                            src={`${urlServidor}/media/${docente.foto_personal}`}
                             alt={`${docente.nombre} ${docente.apellido}`}
                           ></img>
                           <div className="card-docente bg-light text-dark">
@@ -46,12 +47,10 @@ const NuestroStaff = ({ docentes }) => {
                           <div>
                             <img
                               className="img-docente"
-                              src={`http://flydevs.ddns.net/media/${
-                                docentes[key + 1].foto_personal
-                              }`}
-                              alt={`${docentes[key + 1].nombre} ${
-                                docentes[key + 1].apellido
-                              }`}
+                              src={`${urlServidor}/media/${docentes[key + 1].foto_personal
+                                }`}
+                              alt={`${docentes[key + 1].nombre} ${docentes[key + 1].apellido
+                                }`}
                             ></img>
                             <div className="card-docente bg-light text-dark">
                               <p className="arial-rounded pt-1">
@@ -67,12 +66,10 @@ const NuestroStaff = ({ docentes }) => {
                           <div>
                             <img
                               className="img-docente"
-                              src={`http://flydevs.ddns.net/media/${
-                                docentes[key + 2].foto_personal
-                              }`}
-                              alt={`${docentes[key + 2].nombre} ${
-                                docentes[key + 2].apellido
-                              }`}
+                              src={`${urlServidor}/media/${docentes[key + 2].foto_personal
+                                }`}
+                              alt={`${docentes[key + 2].nombre} ${docentes[key + 2].apellido
+                                }`}
                             ></img>
                             <div className="card-docente bg-light text-dark">
                               <p className="arial-rounded pt-1">
@@ -120,7 +117,7 @@ const NuestroStaff = ({ docentes }) => {
                         <div>
                           <img
                             className="img-docente"
-                            src={`http://flydevs.ddns.net/media/${docente.foto_personal}`}
+                            src={`${urlServidor}/media/${docente.foto_personal}`}
                             alt={`${docente.nombre} ${docente.apellido}`}
                           ></img>
                           <div className="card-docente bg-light text-dark">
@@ -134,12 +131,10 @@ const NuestroStaff = ({ docentes }) => {
                           <div>
                             <img
                               className="img-docente"
-                              src={`http://flydevs.ddns.net/media/${
-                                docentes[key + 1].foto_personal
-                              }`}
-                              alt={`${docentes[key + 1].nombre} ${
-                                docentes[key + 1].apellido
-                              }`}
+                              src={`${urlServidor}/media/${docentes[key + 1].foto_personal
+                                }`}
+                              alt={`${docentes[key + 1].nombre} ${docentes[key + 1].apellido
+                                }`}
                             ></img>
                             <div className="card-docente bg-light text-dark">
                               <p className="arial-rounded pt-1 pb-0 m-0">
@@ -155,12 +150,10 @@ const NuestroStaff = ({ docentes }) => {
                           <div>
                             <img
                               className="img-docente"
-                              src={`http://flydevs.ddns.net/media/${
-                                docentes[key + 2].foto_personal
-                              }`}
-                              alt={`${docentes[key + 1].nombre} ${
-                                docentes[key + 2].apellido
-                              }`}
+                              src={`${urlServidor}/media/${docentes[key + 2].foto_personal
+                                }`}
+                              alt={`${docentes[key + 1].nombre} ${docentes[key + 2].apellido
+                                }`}
                             ></img>
                             <div className="card-docente bg-light text-dark">
                               <p className="arial-rounded pt-1 pb-0 m-0">

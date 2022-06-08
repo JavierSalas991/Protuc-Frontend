@@ -2,6 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Button } from "react-bootstrap";
+import { urlServidor } from "../helpers/urlHelper";
 
 const NuevoCarrousel = ({
   info,
@@ -41,7 +42,7 @@ const NuevoCarrousel = ({
             return (
               <div style={{ fontSize: "1vw" }}>
                 <img
-                  src={`http://flydevs.ddns.net/media/${item.img}`}
+                  src={`${urlServidor}/media/${item.img}`}
                   className="d-block w-100"
                   alt="..."
                 />
@@ -50,7 +51,7 @@ const NuevoCarrousel = ({
                     <div className="col-4 d-flex">
                       <img
                         className="protuc-logo"
-                        src={"http://flydevs.ddns.net/media/protuc-logo.png"}
+                        src={`${urlServidor}/media/protuc-logo.png`}
                       />
                     </div>
                     <div className="col-6 d-flex flex-column justify-content-end align-items-start text-start">
@@ -77,7 +78,7 @@ const NuevoCarrousel = ({
             );
             // return (
             //   <div key={key} className="nuevo-carousel-body">
-            //     <img className="nuevo-carousel-ancho-img" src={`http://flydevs.ddns.net/media/${item.img}`} />
+            //     <img className="nuevo-carousel-ancho-img" src={`${urlServidor}/media/${item.img}`} />
             //     {item.titulo !== "" ? (
             //       <p className="nuevo-carousel-titulo">{item.titulo}</p>
             //     ) : null}

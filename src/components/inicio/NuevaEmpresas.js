@@ -2,6 +2,7 @@ import {React, useEffect, useState} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Button } from "react-bootstrap";
+import { urlServidor } from "../helpers/urlHelper";
 
 const NuevaEmpresas = ({
   info,
@@ -62,7 +63,7 @@ const NuevaEmpresas = ({
         {info.map((item, key) => {
           return (
             <div key={key}>
-              <img className="sponsors-img" src={`http://flydevs.ddns.net/media/${item.logo}`} />
+              <img className="sponsors-img" src={`${urlServidor}/media/${item.logo}`} />
             </div>
           );
         })}

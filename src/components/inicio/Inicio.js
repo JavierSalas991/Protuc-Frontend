@@ -15,6 +15,7 @@ import NuevoCurso from "./NuevoCurso";
 import NuevaEmpresas from "./NuevaEmpresas";
 import Avion from "./Avion";
 import Carrousel from "./Carrousel";
+import { urlServidor } from "../helpers/urlHelper";
 
 const Inicio = ({ infoGeneral }) => {
 
@@ -24,12 +25,12 @@ const Inicio = ({ infoGeneral }) => {
 
 
   const getCursos = async () => {
-    const res = await Axios.get("http://flydevs.ddns.net/protucapi/cursos/");
+    const res = await Axios.get(`${urlServidor}/protucapi/cursos/`);
     return res;
   }
 
   const getSponsors = async () => {
-    const res = await Axios.get("http://flydevs.ddns.net/protucapi/sponsors/");
+    const res = await Axios.get(`${urlServidor}/protucapi/sponsors/`);
     return res;
   }
 

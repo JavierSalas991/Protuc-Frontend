@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel, Button } from "react-bootstrap";
 import fondoCeleste from "../../img/fondoCeleste.png";
+import { urlServidor } from "../helpers/urlHelper";
 
 const Carrousel = ({ infoCarousel }) => {
   console.log(infoCarousel);
@@ -43,7 +44,7 @@ const Carrousel = ({ infoCarousel }) => {
     //   </Carousel.Item>
     // </Carousel>
 
-    <div style={{'font-size': '1.2vw'}}>
+    <div style={{ 'font-size': '1.2vw' }}>
       <div
         id="carouselExampleIndicators"
         className="carousel slide arial-rounded"
@@ -96,7 +97,7 @@ const Carrousel = ({ infoCarousel }) => {
                 className={key === 0 ? "carousel-item active" : "carousel-item"}
               >
                 <img
-                  src={`http://flydevs.ddns.net/media/${item.img}`}
+                  src={`${urlServidor}/media/${item.img}`}
                   className="d-block w-100"
                   alt="..."
                 />
@@ -104,11 +105,11 @@ const Carrousel = ({ infoCarousel }) => {
                   <div className="row h-100">
                     <div className="col-4 "></div>
                     <div className="col-6 d-flex flex-column justify-content-end align-items-start text-start">
-                      <h2 
-                      className=" text-light"
-                      style={{'font-size': '200%'}}
+                      <h2
+                        className=" text-light"
+                        style={{ 'font-size': '200%' }}
                       >{item.titulo}</h2>
-                      <p style={{'font-size': '100%'}}>{item.subtitulo}</p>
+                      <p style={{ 'font-size': '100%' }}>{item.subtitulo}</p>
                       <button
                         className="boton-celeste-slider px-2 pt-1 pb-1"
                         style={{ "white-space": "nowrap" }}
@@ -156,7 +157,7 @@ const Carrousel = ({ infoCarousel }) => {
             return (
               <div className={key === 0 ? "carousel-item active" : "carousel-item"}>
                 <img
-                  src={`http://flydevs.ddns.net/media/${item.img}`}
+                  src={`${ urlServidor }/media/${item.img}`}
                   className="d-block w-100"
                   alt="..."
                 />
