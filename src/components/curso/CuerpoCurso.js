@@ -96,49 +96,12 @@ const CuerpoCurso = ({ setShowFormulario, detallesCurso }) => {
                                 return <Modulo nombre={modulo.nombre} texto={modulo.texto}></Modulo>
                             })
                             : null}
-{/* 
-                        <div className='fondo-gris my-4 cursor-pointer' style={{ width: '95%', borderRadius: '10px', padding: '0.5vw 1.5vw' }}>
-                            <p style={{ fontSize: '2em' }} className='fuente3 my-2'>
-                                <span className='color-morado'>
-                                    {iconos.dropDown}
-                                </span>
-                                <span className='ms-3'>
-                                    Módulo I
-                                </span>
-                            </p>
-                        </div>
-                        <div className='fondo-gris my-4 cursor-pointer' style={{ width: '95%', borderRadius: '10px', padding: '0.5vw 1.5vw' }}>
-                            <p style={{ fontSize: '2em' }} className='fuente3 my-2'>
-                                <span className='color-morado'>
-                                    {iconos.dropDown}
-                                </span>
-                                <span className='ms-3'>
-                                    Módulo II
-                                </span>
-                            </p>
-                        </div>
-                        <div className='fondo-gris my-4 cursor-pointer' style={{ width: '95%', borderRadius: '10px', padding: '0.5vw 1.5vw' }}>
-                            <p style={{ fontSize: '2em' }} className='fuente3 my-2'>
-                                <span className='color-morado'>
-                                    {iconos.dropDown}
-                                </span>
-                                <span className='ms-3'>
-                                    Módulo III
-                                </span>
-                            </p>
-                        </div> */}
 
-                        <div className='fondo-gris my-4 cursor-pointer' style={{ width: '95%', borderRadius: '10px', padding: '0.5vw 1.5vw' }}>
-                            <p style={{ fontSize: '2em' }} className='fuente3 my-2'>
-                                <span className='color-morado'>
-                                    {iconos.dropDown}
-                                </span>
-                                <span className='ms-3'>
-                                    Exámenes
-                                </span>
-                            </p>
-                        </div>
-                        
+                        {detallesCurso.examenes && detallesCurso.examenes !== "" ?
+                            <Modulo nombre={"Exámenes"} texto={detallesCurso.examenes}></Modulo>
+                            : null}
+
+
                     </div>
 
 

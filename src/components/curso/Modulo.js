@@ -15,8 +15,8 @@ const Modulo = ({ nombre, texto }) => {
 
     return (
         <>
-            <div onClick={setMostrarTexto_} className='fondo-gris my-4 cursor-pointer ' style={{ width: '95%', borderRadius: '10px', padding: '0.5vw 1.5vw' }}>
-                <p style={{ fontSize: '2em' }} className='fuente3 my-2'>
+            <div className=' fondo-gris my-4 cursor-pointer ' style={{ width: '95%', borderRadius: '10px', padding: '0.5vw 1.5vw' }}>
+                <p onClick={setMostrarTexto_}  style={{ fontSize: '2em' }} className='fuente3 my-2'>
                     <span className='color-morado girar_'>
                         {mostrarTexto? iconos.dropUp : iconos.dropDown}
                     </span>
@@ -25,7 +25,7 @@ const Modulo = ({ nombre, texto }) => {
                     </span>
                 </p>
                 {mostrarTexto ?
-                    <p className='transition-modulos' style={{ fontSize: '1.5em' }}>{texto}</p>
+                    <p className='animate__animated animate__fadeIn' style={{ fontSize: '1.4em' }}>{texto}</p>
                     : null}
             </div>
         </>
