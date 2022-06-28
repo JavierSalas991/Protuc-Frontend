@@ -281,6 +281,10 @@
   font-family: arial-rounded;
 }
 
+.transition-modulos{
+  transition: width 2s, height 4s;
+}
+
 @media only screen and (max-width: 992px) {
 
   .carousel-cursos .slide {

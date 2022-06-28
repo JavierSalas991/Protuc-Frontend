@@ -1,14 +1,28 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../common/Footer';
 import PublicidadHeader from '../common/PublicidadHeader';
 import ModalFromulario from '../formulario/ModalFromulario';
 import NavHamburguesa from '../inicio/NavHamburguesa';
 import CuerpoCurso from './CuerpoCurso';
 import NavbarCurso from './NavbarCurso';
+import { useParams } from 'react-router-dom';
+import { urlServidor } from '../helpers/urlHelper';
+import Axios from 'axios';
 
 const Curso = ({ infoGeneral }) => {
 
-    //modal form
+    const { id } = useParams();
+    const [detallesCurso, setDetallesCurso] = useState(null)
+
+    const getCurso = async () => {
+        const res = await Axios.get(`${urlServidor}/protucapi/curso/${id}`);
+        setDetallesCurso(res) ;
+    };
+
+    useEffect(() => {
+        getCurso()
+    }, [id])
+
     const [showFormulario, setShowFormulario] = useState(false);
     const handleCloseFormulario = () => {
         setShowFormulario(false);
@@ -21,7 +35,9 @@ const Curso = ({ infoGeneral }) => {
             ) : null}
             <NavHamburguesa></NavHamburguesa>
             <NavbarCurso></NavbarCurso>
-            <CuerpoCurso setShowFormulario={setShowFormulario}></CuerpoCurso>
+            {detallesCurso ?
+                <CuerpoCurso setShowFormulario={setShowFormulario} detallesCurso={detallesCurso.data}></CuerpoCurso>
+                : null}
             <Footer color='light'></Footer>
             <ModalFromulario show={showFormulario} handleClose={handleCloseFormulario}></ModalFromulario>
         </div>

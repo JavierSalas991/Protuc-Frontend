@@ -18,8 +18,8 @@ const NuevoCurso = ({
 }) => {
   const [cantImagenes, setCantImagenes] = useState(4);
 
-  const handleInscripcion = () => {
-    window.location = "/protuc/curso"
+  const handleInscripcion = (id) => {
+    window.location = `/protuc/curso/${id}`
   };
 
   useEffect(() => {
@@ -66,7 +66,7 @@ const NuevoCurso = ({
         showStatus={showStatus}
         stopOnHover={stopOnHover}
         interval={3500}
-        transitionTime={700}
+        transitionTime={500}
       >
         {info.map((item, key) => {
           return (
@@ -131,7 +131,7 @@ const NuevoCurso = ({
                       <div className="d-flex justify-content-between m-0 p-0 align-items-end">
                         <p
                           onClick={() => {
-                            handleInscripcion();
+                            handleInscripcion(item.id);
                           }}
                           className="colorsito-amarillo cursor-pointer">
                           Inscribite

@@ -28,7 +28,8 @@ function App() {
         {infoGeneral ?
           <>
             <Route exact path="/inicio" element={<Inicio infoGeneral={infoGeneral} />} />
-            <Route exact path="/curso" element={<Curso infoGeneral={infoGeneral} />} />
+            {/* <Route exact path="/curso" element={<Curso infoGeneral={infoGeneral} />} /> */}
+            <Route exact path="/curso/:id" element={<Curso infoGeneral={infoGeneral} />} />
           </>
           : null}
       </Routes>
