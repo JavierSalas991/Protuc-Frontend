@@ -15,6 +15,7 @@ function App() {
 
   const getHome = async () => {
     const res = await Axios.get(`${urlServidor}/protucapi/home/`);
+    console.log(res)
     return res;
   };
 
