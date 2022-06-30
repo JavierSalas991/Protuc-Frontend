@@ -16,9 +16,9 @@ const Modulo = ({ nombre, texto }) => {
     return (
         <>
             <div className=' fondo-gris my-4 cursor-pointer ' style={{ width: '95%', borderRadius: '10px', padding: '0.5vw 1.5vw' }}>
-                <p onClick={setMostrarTexto_}  style={{ fontSize: '2em' }} className='fuente3 my-2'>
+                <p onClick={setMostrarTexto_} style={{ fontSize: '2em' }} className='fuente3 my-2'>
                     <span className='color-morado girar_'>
-                        {mostrarTexto? iconos.dropUp : iconos.dropDown}
+                        {mostrarTexto ? iconos.dropUp : iconos.dropDown}
                     </span>
                     <span className='ms-3 girar_'>
                         {nombre}
