@@ -42,7 +42,7 @@ const CuerpoCurso = ({ setShowFormulario, detallesCurso }) => {
                             {detallesCurso.subtitulo_2 && detallesCurso.subtitulo_2 !== "" ?
                                 <h3 className='colorgris1 fuente1 mt-4' style={{ fontSize: '2.5em' }}>{detallesCurso.subtitulo_2}</h3>
                                 : null}
-
+                            
                             {detallesCurso.parrafos_2 && detallesCurso.parrafos_2 !== "" ? detallesCurso.parrafos_2.map((parrafo) => {
                                 return (
                                     <p style={{ fontSize: '1.6em', lineHeight: '1.6vw' }} className='fuente4 colorgris2'>
@@ -70,7 +70,7 @@ const CuerpoCurso = ({ setShowFormulario, detallesCurso }) => {
                         </button>
 
                         <div className='d-flex flex-column align-items-center'>
-                            <img className='img-cursos-online' src={cursosOnline}></img>
+                            <img className='img-cursos-online' src={`${urlServidor}/media/${detallesCurso.imagen_grande}`}></img>
                         </div>
                     </div>
 
