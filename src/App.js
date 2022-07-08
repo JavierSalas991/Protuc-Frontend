@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import 'animate.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./components/inicio/Inicio";
 import 'antd/dist/antd.css';
@@ -14,6 +15,7 @@ function App() {
 
   const getHome = async () => {
     const res = await Axios.get(`${urlServidor}/protucapi/home/`);
+    console.log(res)
     return res;
   };
 
@@ -28,7 +30,7 @@ function App() {
         {infoGeneral ?
           <>
             <Route exact path="/inicio" element={<Inicio infoGeneral={infoGeneral} />} />
-            <Route exact path="/curso" element={<Curso infoGeneral={infoGeneral} />} />
+            <Route exact path="/curso/:id" element={<Curso infoGeneral={infoGeneral} />} />
           </>
           : null}
       </Routes>

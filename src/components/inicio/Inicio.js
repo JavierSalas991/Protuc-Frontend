@@ -37,6 +37,7 @@ const Inicio = ({ infoGeneral }) => {
   useEffect(async () => {
     let cursos_ = await getCursos();
     let sponsors_ = await getSponsors();
+    console.log(cursos_.data);
     setCursos(cursos_.data);
     setSponsors(sponsors_.data);
   }, []);

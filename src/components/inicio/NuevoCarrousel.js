@@ -19,6 +19,8 @@ const NuevoCarrousel = ({
   animationHandler,
   swipeable,
 }) => {
+
+  console.log(info)
   return (
     <>
       <section className="d-flex">

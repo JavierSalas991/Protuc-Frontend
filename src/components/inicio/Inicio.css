@@ -234,9 +234,10 @@
 }
 .img-cursos-online{
   border-radius: 15px;
-  position: relative;
+  position: absolute;
   width: 24vw;
-  bottom: 10vw;
+  margin-top: 4vw;
+  /* top: 10vw; */
 }
 .boton-morado-2 {
   width: 65%;

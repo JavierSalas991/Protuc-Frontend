@@ -8,6 +8,9 @@ const PublicidadHeader = ({ banner_header }) => {
   console.log(banner_header);
   return (
     <div id="fondo" className="text-light alto-banner">
+
+
+      {/* dispositivos grandes */}
       <div className="d-none d-md-block h-100">
         <div className="row h-100 container-fluid">
           <div className="col-3 h-100  d-flex justify-content-center">
@@ -24,9 +27,11 @@ const PublicidadHeader = ({ banner_header }) => {
               className="d-flex h-100 flex-column justify-content-center align-items-center"
               style={{ "font-family": "arial-rounded" }}
             >
+
               <h4 id="titulo-publicidad" className="mt-2 text-center">
                 {banner_header.texto_principal}
               </h4>
+
               {banner_header.texto_secundario !== "" ? (
                 <p id="subtitulo-publicidad">{banner_header.texto_secundario}</p>
               ) : null}
@@ -53,7 +58,7 @@ const PublicidadHeader = ({ banner_header }) => {
         </div>
       </div>
 
-
+      {/* dispositivos chicos */}
       <div className="d-inline d-md-none h-100">
         <div className="row h-100 container-fluid">
           <div className="col-3 h-100  d-flex justify-content-center">
@@ -70,7 +75,7 @@ const PublicidadHeader = ({ banner_header }) => {
               className="d-flex h-100 flex-column justify-content-center align-items-center"
               style={{ "font-family": "arial-rounded" }}
             >
-              <h4 id="titulo-publicidad" className="mt-2 text-center">
+              <h4 id="titulo-publicidad-mobile" className="mt-2 text-center">
                 {banner_header.texto_principal}
               </h4>
             </div>
@@ -80,7 +85,7 @@ const PublicidadHeader = ({ banner_header }) => {
               <Button
                 variant={"info"}
                 className="boton-celeste rounded-pill text-light"
-                style={{ "white-space": "nowrap" }}
+                style={{ "white-space": "nowrap", fontSize: "200%" }}
               >
                 {banner_header.texto_boton}
               </Button>
