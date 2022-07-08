@@ -56,13 +56,13 @@ const CuerpoCurso = ({ setShowFormulario, detallesCurso }) => {
 
                     <div style={{ position: "relative" }} className='col-4 d-flex flex-column align-items-center'>
                         <img src={`${urlServidor}/media/${detallesCurso.imagen}`} style={{ borderRadius: '15px', width: '100%' }}></img>
-
+{/* 
                         <h3 style={{ fontSize: '2.2em', margin: '1vw 0', verticalAlign: "middle", display: "inline-table" }} className='fuente1 colorgris1'>
                             <span className='pe-2' style={{ display: "table-cell", verticalAlign: "middle" }}>Precio</span>
                             <span className='fuente2 ms-0' style={{ fontSize: '1.6em', display: "table-cell", verticalAlign: "middle" }}>AR${detallesCurso.arancel_referencia}</span>
-                        </h3>
+                        </h3> */}
 
-                        <button onClick={() => setShowFormulario(true)} style={{ fontSize: "1.3vw", borderRadius: "1vw" }} className='boton-morado fuente1 my-2'>
+                        <button onClick={() => setShowFormulario(true)} style={{ fontSize: "1.3vw", borderRadius: "1vw" }} className='boton-morado fuente1 my-4'>
                             Consultar ahora
                         </button>
                         <button style={{ fontSize: "1.3vw", borderRadius: "1vw" }} className='boton-morado-outline fuente1 my-2'>
@@ -108,7 +108,7 @@ const CuerpoCurso = ({ setShowFormulario, detallesCurso }) => {
 
             {/* dispositivos chicos: */}
             <div className='d-block d-md-none' style={{ fontSize: '0.7vw' }}>
-                <div className='row ' style={{ margin: '4vw 5vw' }}>
+                <div className='row ' style={{ margin: '1vw' }}>
 
                     <div className='col-12'>
                         <div>

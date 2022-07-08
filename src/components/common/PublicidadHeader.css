@@ -8,6 +8,12 @@
   color: #fff;
   font-size: 135%;
 }
+
+#titulo-publicidad-mobile {
+  color: #fff;
+  font-size: 210%;
+  padding: 0 0.5vw;
+}
 #subtitulo-publicidad {
   color: #fff;
   font-size: 90%;
