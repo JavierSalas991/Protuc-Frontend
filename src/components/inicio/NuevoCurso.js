@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Button, Card } from "react-bootstrap";
 import { urlServidor } from "../helpers/urlHelper";
+import { useNavigate } from "react-router-dom";
 
 const NuevoCurso = ({
   info,
@@ -16,10 +17,14 @@ const NuevoCurso = ({
   showStatus,
   stopOnHover,
 }) => {
+
+  let navigate = useNavigate();
+
   const [cantImagenes, setCantImagenes] = useState(4);
 
   const handleInscripcion = (id) => {
-    window.location = `/protuc/curso/${id}`
+    // window.location = `/protuc/curso/${id}`
+    navigate(`/curso/${id}`, { replace: true })
   };
 
   useEffect(() => {

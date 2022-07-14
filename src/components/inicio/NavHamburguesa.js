@@ -2,11 +2,15 @@ import React from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { iconos } from "../helpers/iconos";
 import logo from "../../img/logos/Protuc_Identidad01.png";
+import { useNavigate } from "react-router-dom";
 
 const NavHamburguesa = () => {
 
+  let navigate = useNavigate()
+
   const redireccionar = (ruta) => {
-    window.location = ruta
+    // window.location = ruta
+    navigate(ruta)
   };
 
   return (
@@ -14,8 +18,7 @@ const NavHamburguesa = () => {
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand"
-            onClick={() => redireccionar("/protuc/inicio")}
-            href="#cursos"
+            onClick={() => redireccionar("/inicio")}
           >
             <img style={{ height: "10vw" }} src={logo}></img>
           </a>
