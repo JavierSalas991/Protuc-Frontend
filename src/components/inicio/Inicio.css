@@ -1,41 +1,259 @@
 .nav-bar {
   background-color: transparent;
   position: absolute;
-  top: 98px;
-  left: 70px;
+  top: 9vw;
+  left: 4vw;
   z-index: 5;
-  /* font-size: larger; */
+  font-family: fredoka-one;
+  font-size: 1.2vw;
 }
-.links-nav{
-    font-size: x-large;
-}
-#clase-empresas{
+.nav-bar-curso {
   background-color: rgb(0, 12, 54);
-  font-size: 22px;
+  z-index: 5;
+  font-family: fredoka-one;
+  font-size: 1.4vw;
 }
-#conoce-mas{
-  color: rgb(5, 217, 218)
+.nav-hamburguesa {
+  background-color: rgb(0, 12, 54);
 }
-#cursos-y-programas{
+.links-nav {
+  font-size: 110%;
+}
+.p-navbar {
+  color: #fff;
+  padding-right: 8px;
+  margin: 0;
+  font-size: 1.1em;
+}
+.p-navbar:hover {
+  color: rgb(5, 217, 218);
+}
+.p-navbar-curso {
+  padding-top: 1em;
+  padding-left: 1em;
+  color: #fff;
+  padding-right: 8px;
+  margin: 0;
+  font-size: 1.4vw;
+}
+.p-navbar-curso:hover {
+  color: rgb(5, 217, 218);
+}
+
+.links-nav-hamb {
+  font-size: large;
+  /* padding: 0;
+  margin: 0; */
+}
+
+#clase-empresas {
+  background-color: rgb(0, 12, 54);
+  font-size: 1.7vw;
+  /* min-height: 180px; */
+  font-family: arial-rounded;
+}
+#conoce-mas {
+  color: rgb(5, 217, 218);
+  text-decoration: none;
+}
+.background-azul-modal {
+  background-color: rgb(7, 14, 39);
+}
+.background-azul-oscuro {
   background-color: rgb(25, 27, 50);
 }
-#titulo-cursos-y-programas{
-  font-size: 34px;
+.background-azul-mas-oscuro {
+  background-color: rgb(0, 12, 54);
 }
-.categoria-seleccionada{
+.background-gris{
+  background-color: #f6f7f9;
+  border: solid 1px rgb(219, 219, 219);
+}
+
+.categoria-seleccionada {
   color: rgb(5, 217, 218);
   border-bottom: rgb(5, 217, 218) solid 3px;
   border-radius: 5px;
-  font-size: 20px;
 }
-.categoria{
+.categoria {
   color: #fff;
-  font-size: 20px;
+  font-size: 60%;
 }
 
-.colorsito-celeste{
+.colorsito-celeste {
   color: rgb(5, 217, 218);
 }
-.colorsito-amarillo{
+.colorsito-amarillo {
   color: rgb(252, 192, 8);
+}
+.cuadro-blanco {
+  width: 85%;
+  aspect-ratio: 2/1;
+  background-color: #fff;
+}
+.contenedor-novedades {
+  aspect-ratio: 2/1;
+}
+.imagen-desplazada {
+  position: relative;
+  width: 100%;
+  top: 10%;
+  left: 4%;
+}
+.cartel-nuevo {
+  position: relative;
+  /* border: yellow solid 1px; */
+  background-color: rgb(25, 27, 50);
+  color: "#fff";
+  width: 50%;
+  aspect-ratio: 20/3;
+  /* height: 75%; */
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+  text-align: center;
+
+  left: 60%;
+  bottom: 70%;
+  transform: rotate(-25deg);
+  font-weight: bolder;
+  /* font-size: 25px; */
+}
+.texto-nuevo {
+  /* font-size: 200%; */
+  margin: 0;
+  padding: 0;
+}
+.lineaCeleste {
+  height: 3vw;
+  border-left: 1px solid rgb(5, 217, 218);
+}
+
+.contenedor-novedades-derecho {
+  width: 80%;
+  height: 90%;
+}
+.display-flex {
+  display: flex;
+}
+.img-docente {
+  border: #fff 6px solid;
+  border-radius: 1000px;
+  width: 16vw;
+  aspect-ratio: 1/1;
+}
+.card-docente {
+  margin-top: 10%;
+  border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 5/2;
+  font-size: 1.5vw;
+}
+.aspect-2-1 {
+  aspect-ratio: 10/7;
+}
+
+.item-carousel-empresas {
+  aspect-ratio: 9/1;
+}
+.item-carousel-empresas-mobile {
+  aspect-ratio: 6/1;
+}
+.boton-carousel-next {
+  background-color: red;
+}
+
+.carouselStaff {
+  position: absolute;
+  width: 100%;
+}
+
+.fondo-gris {
+  background-color: #f6f7f9;
+}
+.fondo-gris-2 {
+  background-color: #8D8D9D;
+}
+
+.fuente1 {
+  font-family: fredoka-one;
+}
+
+.fuente2 {
+  font-family: arial-rounded;
+}
+
+.fuente3 {
+  font-family: aventa;
+}
+.fuente4 {
+  font-family: arial;
+}
+
+.colorgris-1 {
+  color: #333333;
+}
+.colorgris0 {
+  color: #4D4D4D;
+}
+.colorgris1 {
+  color: #666666;
+}
+.colorgris2 {
+  color: #999999;
+}
+.colorgris3 {
+  color: #b3b3b3;
+}
+.boton-morado {
+  width: 75%;
+  aspect-ratio: 5/1;
+  border: none;
+  background-color: #4a22f4;
+  color: #fff;
+}
+.boton-morado:hover {
+  background-color: #3817cf;
+  transition: 0.2s;
+}
+.boton-morado-outline {
+  width: 75%;
+  aspect-ratio: 5/1;
+  border-radius: 1.2vw;
+  border: #4a22f4 solid 2px;
+  color: #4a22f4;
+}
+.boton-morado-outline:hover {
+  background-color: #3817cf;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.contenedor-titulos-cursos{
+  border-bottom: 2px solid #999999;
+}
+.img-cursos-online{
+  border-radius: 15px;
+  position: absolute;
+  width: 24vw;
+  margin-top: 4vw;
+  /* top: 10vw; */
+}
+.boton-morado-2 {
+  width: 65%;
+  aspect-ratio: 9/2;
+  border-radius: 0.4vw;
+  border: none;
+  background-color: #4a22f4;
+  color: #fff;
+  font-size: 1.5vw;
+  position: relative;
+  bottom: 15vw;
+}
+.boton-morado-2:hover {
+  background-color: #3817cf;
+  transition: 0.2s;
+}
+.color-morado{
+  color: #4a22f4;
 }

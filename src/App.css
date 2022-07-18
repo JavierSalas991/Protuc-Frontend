@@ -1,18 +1,374 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: arial-rounded; */
+  /* font-size: 1.2vw; */
 }
-.boton-celeste{
-  color: #FFF;
+
+@font-face {
+  font-family: arial-rounded;
+  src: url(./fuentes/ARLRDBD.TTF);
+}
+@font-face {
+  font-family: aventa;
+  src: url(./fuentes/AVENTA-LIGHTPERSONALUSEONLY.OTF);
+}
+@font-face {
+  font-family: fredoka-one;
+  src: url(./fuentes/FREDOKAONE-REGULAR.TTF);
+}
+
+.arial-rounded {
+  font-family: arial-rounded;
+}
+.aventa {
+  font-family: aventa;
+}
+
+.boton-celeste {
+  color: #fff !important;
+  border: none !important;
+  border-radius: 1000px !important;
+  background-color: rgb(4, 218, 220) !important;
+  /* font-size: 20px; */
+  font-family: arial-rounded !important;
+  font-size: 100%;
+}
+.boton-celeste:hover {
+  background-color: rgb(10, 226, 230) !important;
+  cursor: pointer !important;
+}
+.boton-celeste-cuadrado {
+  color: #fff;
   border: none;
-  border-radius: 1000px;
+  border-radius: 4px;
   background-color: rgb(4, 218, 220);
-  font-size: 20px;
+  font-family: arial-rounded;
 }
-.boton-celeste:hover{
+.boton-celeste-cuadrado:hover {
   background-color: rgb(10, 226, 230);
+  transition: 0.2s;
 }
-.cursor-pointer{
+.boton-gris-cuadrado {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: #666666;;
+  font-family: arial-rounded;
+}
+.boton-gris-cuadrado:hover {
+  background-color: #747474;
+  transition: 0.2s;
+}
+
+.boton-celeste-slider {
+  color: #fff !important;
+  border: none !important;
+  border-radius: 1000px !important;
+  background-color: rgb(4, 218, 220) !important;
+  /* font-size: 20px; */
+  font-family: arial-rounded !important;
+}
+.boton-celeste-slider:hover {
+  background-color: rgb(10, 226, 250) !important;
+}
+.boton-celeste-transparente {
+  color: rgb(4, 218, 220) !important;
+  border: 1px solid rgb(4, 218, 220) !important;
+  border-radius: 1000px !important;
+  background-color: transparent !important;
+  font-family: arial-rounded !important;
+}
+.boton-celeste-transparente:hover {
+  color: #fff;
+  background-color: rgb(4, 218, 220);
+}
+.cursor-pointer {
   cursor: pointer;
+}
+#seccion-footer {
+  aspect-ratio: 4/1;
+}
+
+/* @media (max-width: 434px) {
+  .boton-celeste {
+    font-size: 10px;
+  }
+  .boton-celeste-slider {
+    font-size: 7px;
+  }
+}
+@media (min-width: 435px) and (max-width: 699px) {
+  .boton-celeste {
+    font-size: 12px;
+  }
+  .boton-celeste-slider {
+    font-size: 10px;
+  }
+}
+@media (min-width: 700px) and (max-width: 991px) {
+  .boton-celeste {
+    font-size: 15px;
+  }
+  .boton-celeste-slider {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .boton-celeste {
+    font-size: 20px;
+  }
+  .boton-celeste-slider {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .boton-celeste {
+    font-size: 22px;
+  }
+  .boton-celeste-slider {
+    font-size: 18px;
+  }
+} */
+
+.nuevo-carousel-body {
+  position: relative;
+  text-align: left !important;
+  color: white;
+}
+
+.protuc-logo {
+  width: 10vw !important;
+  height: 13vw;
+  margin-top: 40%;
+}
+
+.nuevo-carousel-titulo {
+  font-family: arial-rounded;
+  font-size: 2.8em;
+}
+
+.divisor-carrousel-titulos{
+  width: 25%;
+  border: rgb(4, 218, 220) solid 3px;
+  border-radius: 10px;
+}
+
+.nuevo-carousel-subtitulo {
+  font-family: arial-rounded;
+  font-size: 1.1em;
+}
+
+.nuevo-carousel-btn {
+  position: absolute;
+  top: 80%;
+  left: 58%;
+  transform: translate(-30%, -50%);
+}
+
+.bg-docentes {
+  background-image: url("/src/img/slider_down01.jpg");
+  background-size: 100%;
+}
+
+.bg-cursos {
+  background-image: url("/src/img/fondoCeleste.png");
+  background-size: 100%;
+}
+
+.docentes-recuadro {
+  background-color: rgba(247, 241, 241, 0.911);
+}
+
+.docentes-alias {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.docentes-titulo {
+  font-size: medium;
+}
+
+.carousel-docentes .slide {
+  min-width: 33% !important;
+}
+
+.carousel-cursos .slide {
+  min-width: 25% !important;
+}
+
+.cursos-body {
+  background-color: rgb(30, 36, 73) !important;
+  height: 360px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
+}
+
+.cursos-body-texto {
+  height: 200px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.cursos-img-container {
+  overflow: hidden !important;
+  width: 100%;
+  height: 160px !important;
+}
+
+.cursos-footer {
+  font-size: 15px;
+
+  margin-bottom: 0px;
+}
+
+.cursos-footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cursos-nombre {
+  font-size: 22px;
+}
+
+.cursos-descripcion {
+  font-size: 1vw !important;
+  word-wrap: break-word;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.cursos-btn-inscribir:hover {
+  cursor: pointer;
+  color: rgb(182, 141, 17);
+}
+
+.nueva-img-docentes {
+  border: #fff 4px solid !important;
+  border-radius: 1000px !important;
+  width: 14vw !important;
+  aspect-ratio: 1/1;
+}
+
+.cursos-titulo {
+  font-size: 2.5vw !important;
+}
+
+.carousel-sponsors .slide {
+  min-width: 20% !important;
+}
+
+.sponsors-img {
+  width: 10vw !important;
+  aspect-ratio: 1/1;
+}
+
+.sponsors-container {
+  background-color: rgb(0, 12, 54);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.sponsors-titulo {
+  font-size: 1.7vw;
+  /* min-height: 180px; */
+  font-family: arial-rounded;
+}
+
+.transition-modulos{
+  transition: width 2s, height 4s;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .carousel-cursos .slide {
+    min-width: 40% !important;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* [class*="nuevo-carousel-"] {
+    display: none;
+  } */
+
+  .nuevo-carousel-ancho-img {
+    width: 100% !important;
+    aspect-ratio: 2/1;
+  }
+  .nuevo-carousel-subtitulo {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: arial-rounded;
+    font-size: 70%;
+  }
+  .nuevo-carousel-titulo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: arial-rounded;
+    font-size: 120%;
+  }
+
+  .protuc-logo {
+    display: none !important;
+  }
+
+  .nuevo-carousel-btn {
+    display: none !important;
+  }
+  .carousel-docentes .slide {
+    min-width: 100% !important;
+  }
+
+  .carousel-cursos .slide {
+    min-width: 100% !important;
+  }
+
+  .bg-docentes {
+    background-image: url("/src/img/slider_down01.jpg");
+    background-size: 300%;
+  }
+
+  .cursos-titulo {
+    font-size: 5vw !important;
+  }
+
+  .nueva-img-docentes {
+    border: #fff 4px solid !important;
+    border-radius: 1000px !important;
+    width: 50vw !important;
+    aspect-ratio: 1/1;
+  }
+  .carousel-sponsors .slide {
+    min-width: 33% !important;
+  }
+
+  .sponsors-img {
+    width: 15vw !important;
+    aspect-ratio: 1/1;
+  }
+
+  .sponsors-titulo {
+    font-size: 3vw;
+    /* min-height: 180px; */
+    font-family: arial-rounded;
+  }
+
+  .links-footer {
+    display: none;
+  }
+
+  .cursos-descripcion {
+    font-size: 3.8vw !important;
+  }
 }

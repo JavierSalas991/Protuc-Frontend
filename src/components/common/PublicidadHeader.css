@@ -1,8 +1,31 @@
-#fondo{
-    background: linear-gradient(to bottom, rgb(23, 80, 157), rgb(5, 178, 234));
-    height: 6rem;
+#fondo {
+  background: linear-gradient(to bottom, rgb(23, 80, 157), rgb(5, 178, 234));
+  width: 100%;
+  aspect-ratio: 11/1;
+  font-size: 1.2vw;
 }
-#titulo-publicidad{
-    color: #fff;
-    font-size: 24px
+#titulo-publicidad {
+  color: #fff;
+  font-size: 135%;
+}
+
+#titulo-publicidad-mobile {
+  color: #fff;
+  font-size: 210%;
+  padding: 0 0.5vw;
+}
+#subtitulo-publicidad {
+  color: #fff;
+  font-size: 90%;
+}
+
+.alto-banner{
+  height: 8vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+ .alto-banner{
+   height: 60px!important;
+ } 
 }
