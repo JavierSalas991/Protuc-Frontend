@@ -1,1 +1,1 @@
-export const urlServidor = 'http://fly2dns.ddns.net' 
+export const urlServidor = 'http://51.222.110.188'
