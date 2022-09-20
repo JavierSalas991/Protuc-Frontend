@@ -1,1 +1,1 @@
-export const urlServidor = 'http://51.222.110.188'
+export const urlServidor = 'https://protuc.com.ar'
